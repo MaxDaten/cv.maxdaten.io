@@ -32,7 +32,7 @@ jobs:
 
     steps:
     - name: Download artifact
-      uses: actions/download-artifact@v2.0.9
+      uses: actions/download-artifact@v3.0.2
       with:
         name: pages
         path: build
