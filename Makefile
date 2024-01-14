@@ -48,7 +48,7 @@ pages:
 		--verbose \
 		./src/cv/curriculum-vitae-short.md
 
-	cp -f ./build/cv/curriculum-vitae.html build/index.html
+	cp -f ./build/cv/curriculum-vitae-short.html build/index.html
 
 	cp -r .well-known build
 	cp CNAME build

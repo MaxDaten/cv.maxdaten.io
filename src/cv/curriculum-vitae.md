@@ -13,8 +13,6 @@ header-includes: |
 
 \bcenter
 
-::: heading
-
 :::::: profile-picture
 ![Jan-Philip Loos Portrait](./src/img/profile-portrait_low.jpg){ width=30% }\
 ::::::

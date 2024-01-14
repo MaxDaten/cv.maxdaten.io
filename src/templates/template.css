@@ -1,9 +1,9 @@
 body {
-    font-family: "Source Sans Pro", "Lucida Grande", Calibri, Helvetica, sans-serif;
+    font-family: "Source Sans Pro", "Lucida Grande", Calibri, Helvetica,
+        sans-serif;
     max-width: 750px;
     margin: auto;
 }
-
 
 .heading {
     display: flex;
@@ -12,7 +12,7 @@ body {
 
 .profile-picture {
     order: 1;
-    width: 40% !important;
+    width: 15% !important;
     position: relative;
     top: -65px;
 }
@@ -35,5 +35,5 @@ h1 {
     margin-bottom: 10px;
 }
 li {
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
 }

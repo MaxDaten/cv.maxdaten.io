@@ -1,7 +1,11 @@
 
 ---
-title:  Jan-Philip Loos
+title: Jan-Philip Loos
 author: Jan-Philip Loos
+subtitle: |
+  MSc: Computer Science
+  ---
+  Expert Full Stack Developer & DevOps
 date: 2023-01-14
 lang: en
 papersize: a4
@@ -13,16 +17,18 @@ header-includes: |
 
 \bcenter
 
+::: heading
+
 :::::: profile-picture
 ![Jan-Philip Loos Portrait](./src/img/profile-portrait_low.jpg){ width=15% }\
-M.Sc. : Computer Science\
-*University of Applied Science Wedel*, 2015
 ::::::
 
 :::::: contact-data
 Oktaviostraße 112 E, 22043 Hamburg, Germany\
 +49 160 966 511 88 • <jloos@maxdaten.io> • [![Github](./src/img/GitHub-Mark-32px.png){ #github-logo height=1em }MaxDaten](https://github.com/MaxDaten)
 ::::::
+
+:::
 
 ---
 

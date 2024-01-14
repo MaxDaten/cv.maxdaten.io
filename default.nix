@@ -3,7 +3,7 @@ let
 
   texlive = pkgs.texlive.combine {
     inherit (pkgs.texlive)
-    scheme-basic xcolor float;
+    scheme-basic xcolor float etoolbox;
   };
 in {
   inherit pkgs;
