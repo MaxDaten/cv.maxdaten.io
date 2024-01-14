@@ -50,6 +50,7 @@ Computer Graphics, Virtual Reality, Functional Programming, Haskell, Nix & NixOS
 
 ## Work Experience
 
+- 07/2021 - 08/2023: Full Stack Development, DevOps & Kubernetes Administration, *Klingel Gruppe*
 - 2012 – now: Full Stack Development & DevOps, Co-Founder of *Briends GmbH*
 - 02/2021 - 06/2021: Consultant & Full Stack Development, *Kitalino GmbH*
 - 02/2020 - 09/2020: Full Stack Development\
@@ -68,6 +69,21 @@ Computer Graphics, Virtual Reality, Functional Programming, Haskell, Nix & NixOS
 - 2016: [Best of „Neuland 2.0“ at Leipziger Buchmesse](http://www.leipziger-buchmesse.de/pressemitteilungen/neuland-20-zeigt-14-ausgewaehlte-startupinnovationen/393971)
 
 ## Projects
+
+### 07/2021 - 08/2023: Klingel Gruppe
+
+Klinge Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channel mail order company in Germany with a focus on fashion and lifestyle products.
+
+Consulting in scaling product pipeline, development, architecture, automatization and infrastructure.
+
+*Technologies:*
+
+- Scala
+- React/Preact
+- Solr
+- AWS
+- Gitlab CI/CD
+- Kubernetes (Admin Guild)
 
 ### 02/2021 – 06/2021: Kitalino GmbH
 
