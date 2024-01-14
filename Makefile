@@ -12,6 +12,7 @@ pages:
 		--include-in-header ./src/templates/base.tex \
 		--template ./src/templates/template.latex \
 		./src/cv/curriculum-vitae.md
+
 	pandoc \
 		--embed-resources --standalone \
 		--write html5 \
@@ -25,6 +26,27 @@ pages:
 		--write docx \
 		--output ./build/cv/curriculum-vitae.docx \
 		./src/cv/curriculum-vitae.md
+
+
+	pandoc \
+		--output ./build/cv/curriculum-vitae-short.pdf \
+		--standalone \
+		--include-in-header ./src/templates/base.tex \
+		--template ./src/templates/template.latex \
+		./src/cv/curriculum-vitae-short.md
+	pandoc \
+		--standalone \
+		--write docx \
+		--output ./build/cv/curriculum-vitae-short.docx \
+		./src/cv/curriculum-vitae.md
+	pandoc \
+		--embed-resources --standalone \
+		--write html5 \
+		--output ./build/cv/curriculum-vitae-short.html \
+		--css ./src/templates/template.css \
+		--template ./src/templates/template.html \
+		--verbose \
+		./src/cv/curriculum-vitae-short.md
 
 	cp -f ./build/cv/curriculum-vitae.html build/index.html
 
