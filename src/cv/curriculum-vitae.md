@@ -305,6 +305,9 @@ Bigpoint GmbH
 
 ## Qualifications
 
+- [IBM: Test and Behavior Driven Development: 2023](https://coursera.org/share/47154e9716c8722de49104341acfbf26)
+- [Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization: 2021](https://coursera.org/share/5c6c297413c2ffaf92112022c3c9143c)
+- [Neural Networks and Deep Learning: 2020](https://coursera.org/share/43d965add17626ecd838e520cb689160)
 - [Stanford University: Machine Learning: 2020](https://coursera.org/share/26faafa34c2f531e0bcec7dd62d92db1)
 - Productivity Management: 2007
 - Creativity Techniques for Students and Leaders: 2007
