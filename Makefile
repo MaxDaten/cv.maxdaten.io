@@ -13,7 +13,7 @@ pages:
 		--template ./src/templates/template.latex \
 		./src/cv/curriculum-vitae.md
 	pandoc \
-		--self-contained \
+		--embed-resources --standalone \
 		--write html5 \
 		--output ./build/cv/curriculum-vitae.html \
 		--css ./src/templates/template.css \
