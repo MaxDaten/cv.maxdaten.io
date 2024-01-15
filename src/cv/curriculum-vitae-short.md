@@ -1,4 +1,3 @@
-
 ---
 title: Jan-Philip Loos
 author: Jan-Philip Loos
@@ -7,32 +6,18 @@ subtitle: |
   ---
   Expert Full Stack Developer & DevOps
 date: 2023-01-14
+contact: |
+  Oktaviostraße 112 E, 22043 Hamburg, Germany\
+  +49 160 966 511 88 • <jloos@maxdaten.io> • [![Github](./src/img/GitHub-Mark-32px.png){ #github-logo height=1em }MaxDaten](https://github.com/MaxDaten)
+profile-picture: src/img/profile-portrait_low.jpg
 lang: en
 papersize: a4
 documentclass: article
+graphics: yes
 header-includes: |
     \newcommand{\bcenter}{\begin{center}}
     \newcommand{\ecenter}{\end{center}}
 ...
-
-\bcenter
-
-::: heading
-
-:::::: profile-picture
-![Jan-Philip Loos Portrait](./src/img/profile-portrait_low.jpg){ width=15% }\
-::::::
-
-:::::: contact-data
-Oktaviostraße 112 E, 22043 Hamburg, Germany\
-+49 160 966 511 88 • <jloos@maxdaten.io> • [![Github](./src/img/GitHub-Mark-32px.png){ #github-logo height=1em }MaxDaten](https://github.com/MaxDaten)
-::::::
-
-:::
-
----
-
-\ecenter
 
 ## Focus
 
@@ -102,3 +87,11 @@ product catalog.
 - Productivity Management: 2007
 - Creativity Techniques for Students and Leaders: 2007
 - Unit-Testing in Java (JUnit): 2010
+
+## References
+
+- [Github Profile](https://github.com/MaxDaten)
+- [Curriculum Vitae (pdf)](./cv/curriculum-vitae-short.pdf)
+- [Curriculum Vitae (docx)](./cv/curriculum-vitae-short.docx)
+- [LinkedIn Profile](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
+- [Xing Profile](https://www.xing.com/profile/JanPhilip_Loos/cv)
