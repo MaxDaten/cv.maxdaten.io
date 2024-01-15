@@ -2,43 +2,42 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: cachix/install-nix-action@v20
-      with:
-        nix_path: nixpkgs=channel:nixos-unstable
-    - uses: cachix/cachix-action@v10
-      with:
-        name: cv-maxdaten-io
-        attributes: pages
-        signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix-shell --pure --run 'make pages'
-    - name: Upload pages
-      uses: actions/upload-artifact@v4.1.0
-      with:
-        name: pages
-        path: build
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v20
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - uses: cachix/cachix-action@v10
+        with:
+          name: cv-maxdaten-io
+          signingKey: "${{ secrets.CACHIX_SIGNING_KEY }}"
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+      - run: nix-shell --pure --run 'make pages'
+      - name: Upload pages
+        uses: actions/upload-artifact@v4.1.0
+        with:
+          name: pages
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
 
     steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v4.1.1
-      with:
-        name: pages
-        path: build
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v4.0.0
-      with:
-        build_dir: build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.1
+        with:
+          name: pages
+          path: build
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        with:
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
