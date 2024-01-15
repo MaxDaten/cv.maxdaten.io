@@ -5,7 +5,7 @@ subtitle: |
   MSc: Computer Science
   ---
   Expert Full Stack Developer & DevOps
-date: 2023-01-14
+date: 2024-01-14
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
   +49 160 966 511 88 • <jloos@maxdaten.io> • [![Github](./src/img/GitHub-Mark-32px.png){ #github-logo height=1em }MaxDaten](https://github.com/MaxDaten)
