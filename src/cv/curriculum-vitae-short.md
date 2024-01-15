@@ -58,13 +58,13 @@ Onboarding project to new enterprise environment. Support data-science team in a
 
 **Technologies**: Python, NumPy, Jupiter Notebooks, Github Actions, Microsoft Azure
 
-### Tablet Based Centration - Fielmann AG (2018 – 2020)
+### Tablet Based Centration - Fielmann AG (2019 – 2020)
 
 Technical Lead Developer for an iOS enterprise app for opticians to measure optometric values of customers.
 
 **Technologies**: C#, .Net, Xamarin, Jenkins, AWS
 
-### Fielmann AG - Product Catalogue
+### Product Catalogue - Fielmann AG (2018 – 2019)
 
 Developing front-end, backend & infrastructure and continuous deployment for an AWS backed
 product catalog.
