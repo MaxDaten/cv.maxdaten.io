@@ -25,6 +25,12 @@ body {
     vertical-align: text-bottom;
 }
 
+.year {
+    float: right;
+    font-size: 0.8em;
+    color: #777;
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;

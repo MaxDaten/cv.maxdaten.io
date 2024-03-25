@@ -13,97 +13,117 @@ profile-picture: ./src/img/profile-portrait-comic.jpg
 
 # Project History Highlights
 
-## Klingel Gruppe (2021 - 2023)
+## Klingel Gruppe <span class="year">\hfill \textmd{2021 - 2023}</span>
 
 *E-Commerce Search Engine Team*
 
-Consultation in scaling product pipeline, development, architecture, automatization and infrastructure.
+* Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
+* Frontend development of the product listings and search engine
+* Frontend development of the shop backoffice
+* SRE of the shop reverse proxy
+* Maintaining and administrating Kubernetes cluster (Administration Interest Group)
 
 Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channel mail order company in Germany with a focus on fashion and lifestyle products.
 
 ### Technologies
 
-Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes (Administration Interest Group), Docker, Postgres, Kafka
+`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Kafka, NixOS, Nginx`
 
-## Fielmann AG (2018 – 2019)
-
-*Product Catalog Team*
-
-Developing front-end, backend & infrastructure and continuous deployment for an AWS backed
-product catalog.
-
-### Technologies
-
-Kotlin, React, Kubernetes, Docker, AWS, Kafka
-
-## Fielmann AG (2019 – 2020)
+## Fielmann AG <span class="year">\hfill \textmd{2019 – 2020}</span>
 
 *Tech Lead iOS App - Tablet Based Centration*
 
-Technical Lead Developer for an iOS enterprise app for opticians to measure optometric values of customers.
+* Technical Lead Developer for an iOS enterprise app for opticians to measure optometric values of customers
+* Conception of quality assurance and testing strategy to ensure critical optometric values are measured correctly
+* Accompany team in rollout of the app to over 700 stores
+* Maintaining a Jenkins pipeline for continuous integration and deployment
 
 ### Technologies
 
-C#, .Net, Xamarin, Jenkins, AWS
+`C#, .Net, Xamarin, Jenkins, AWS, iOS, fastlane`
 
-## Oaktree Technologies GmbH (2020)
+## Fielmann AG <span class="year">\hfill \textmd{2018 – 2019}</span>
 
-*Project Onboarding Tablet Based Centration*
+*Product Catalog Team*
 
-Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. Onboarding project to new enterprise environment. Support data-science team in architecture, automatization and workflow.
+* Greenfield backend & frontend development of a product catalog for shop assistants
+* Setup of a continuous deployment pipeline as a template for other teams
+* Mentoring in kubernetes & cloud infrastructure
 
 ### Technologies
 
-Python, NumPy, Jupiter Notebooks, Github Actions, Microsoft Azure
+`Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI`
 
-## Verlag Herder GmbH - Kitalino GmbH (2021)
+## Oaktree Technologies GmbH <span class="year">\hfill \textmd{2012 – 2020}</span>
+
+*Project Onboarding Tablet Based Centration & Support data-science team in architecture, automatization and workflow*
+
+* Setup of processes meeting medical device regulations regarding software development processes and documentation
+* Mentoring data-science team in development workflow for reproducible notebooks and CI/CD
+
+Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is specialized in developing digital solutions for opticians. Centration app is now branded as [Qvido](https://www.linkedin.com/products/oaktt-qvido/).
+
+### Technologies
+
+`Python, NumPy, Jupiter Notebooks, Github Actions, Microsoft Azure`
+
+## Verlag Herder GmbH - Kitalino GmbH <span class="year">\hfill \textmd{2021}</span>
 
 *Consultation on Architecture, Automatization, and API Development*
+
+* Conceptualization of a microservice architecture for the Kitalino platform for media and data exchange
+* Support in transition to a Jenkins CI/CD pipeline (Blue Ocean)
+* Development of a new API for integration of Kitalino with leading daycare management software
+* Accompany Keycloak integration for user management
 
 The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solutions for daycare centers and their supporting organizations. As a core feature Kitalino offers digital development documentation of children.
 
 ### Technologies
 
-Distributed Architectures, Keycloak, Agile Project Management in Scrum Framework, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4
+`Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
 
-## Papego - Co-Founder, Briends GmbH (2012 – 2023)
+## Briends GmbH Papego - Co-Founder <span class="year">\hfill \textmd{2012 – present}</span>
 
-Papego was an app for continuing reading printed books digitally, supported by several German publishers. The app was available for iOS and Android and was critically acclaimed by the press. The app was shut down in 2023.
+*Co-Founder of a startup in the publishing industry*
 
-Conception and full stack development of iOS & Android app & backend. Automatization, integration & delivery in Google Cloud.
+* Technical lead in architecture and development
+* Development of a digital reading app in iOS and Android for printed books
+* Architecture design and development of a backend for processing and analyzing book data
+
+Papego was an app for continuing reading printed books digitally, supported by several German publishers. The app was available for iOS and Android and was critically acclaimed by the press. The app was discontinued in 2023.
 
 ### Technologies
 
-Haskell, Google Cloud, Kubernetes, Docker, Nix, React, Angular, Ionic, Swift, Kotlin, Postgres
+`Haskell, Google Cloud, Kubernetes, Docker, Nix, React, Angular, Ionic, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD`
 
 # Awards
 
-- 2018: [German Design Award (Winner: Excellent Communications Design -- Apps)](https://www.german-design-award.com/die-gewinner/galerie/detail/14562-papego.html)
-- 2016: [Isarnetz Award für Medieninnovation](https://www.briends.net/2016/11/04/papego-mit-isarnetz-award-f%C3%BCr-medieninnovation-ausgezeichnet/)
-- 2016: [CONTENTshift Award (Börsenverein des Deutschen Buchhandels)](https://www.contentshift.de/2016/gewinner/)
-- 2016: [Best of „Neuland 2.0“ at Leipziger Buchmesse](http://www.leipziger-buchmesse.de/pressemitteilungen/neuland-20-zeigt-14-ausgewaehlte-startupinnovationen/393971)
+* 2018: [German Design Award (Winner: Excellent Communications Design -- Apps)](https://www.german-design-award.com/die-gewinner/galerie/detail/14562-papego.html)
+* 2016: [Isarnetz Award für Medieninnovation](https://www.briends.net/2016/11/04/papego-mit-isarnetz-award-f%C3%BCr-medieninnovation-ausgezeichnet/)
+* 2016: [CONTENTshift Award (Börsenverein des Deutschen Buchhandels)](https://www.contentshift.de/2016/gewinner/)
+* 2016: [Best of „Neuland 2.0“ at Leipziger Buchmesse](http://www.leipziger-buchmesse.de/pressemitteilungen/neuland-20-zeigt-14-ausgewaehlte-startupinnovationen/393971)
 
 # Qualifications
 
-- [IBM: Test and Behavior Driven Development: 2023](https://coursera.org/share/47154e9716c8722de49104341acfbf26)
-- [Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization: 2021](https://coursera.org/share/5c6c297413c2ffaf92112022c3c9143c)
-- [Neural Networks and Deep Learning: 2020](https://coursera.org/share/43d965add17626ecd838e520cb689160)
-- [Stanford University: Machine Learning: 2020](https://coursera.org/share/26faafa34c2f531e0bcec7dd62d92db1)
-- Productivity Management: 2007
-- Creativity Techniques for Students and Leaders: 2007
-- Unit-Testing in Java (JUnit): 2010
+* [IBM: Test and Behavior Driven Development: 2023](https://coursera.org/share/47154e9716c8722de49104341acfbf26)
+* [Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization: 2021](https://coursera.org/share/5c6c297413c2ffaf92112022c3c9143c)
+* [Neural Networks and Deep Learning: 2020](https://coursera.org/share/43d965add17626ecd838e520cb689160)
+* [Stanford University: Machine Learning: 2020](https://coursera.org/share/26faafa34c2f531e0bcec7dd62d92db1)
+* Productivity Management: 2007
+* Creativity Techniques for Students and Leaders: 2007
+* Unit-Testing in Java (JUnit): 2010
 
 # Focus
 
-- Functional Programming and Architecture
-- Automatisation and Continuous Integration & Delivery
-- Cloud Architecture, Distributed Systems & Microservice Architecture
-- Self-Organizing Agile Teams
+* Functional Programming and Architecture
+* Automatisation and Continuous Integration & Delivery
+* Cloud Architecture, Distributed Systems & Microservice Architecture
+* Self-Organizing Agile Teams
 
 # References
 
-- [Github Profile](https://github.com/MaxDaten)
-- [Curriculum Vitae (pdf)](./cv/curriculum-vitae-short.pdf)
-- [Curriculum Vitae (docx)](./cv/curriculum-vitae-short.docx)
-- [LinkedIn Profile](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
-- [Xing Profile](https://www.xing.com/profile/JanPhilip_Loos/cv)
+* [Github Profile](https://github.com/MaxDaten)
+* [Curriculum Vitae (pdf)](./cv/curriculum-vitae-short.pdf)
+* [Curriculum Vitae (docx)](./cv/curriculum-vitae-short.docx)
+* [LinkedIn Profile](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
+* [Xing Profile](https://www.xing.com/profile/JanPhilip_Loos/cv)

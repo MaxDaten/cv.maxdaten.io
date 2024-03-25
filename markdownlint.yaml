@@ -1,2 +1,4 @@
 no-duplicate-header:
     siblings_only: true
+
+no-inline-html: false
