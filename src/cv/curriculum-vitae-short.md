@@ -13,7 +13,7 @@ profile-picture: ./src/img/profile-portrait-comic.jpg
 
 # Project History Highlights
 
-## Klingel Gruppe <span class="year">\hfill \textmd{2021 - 2023}</span>
+## Klingel Gruppe <span class="year">\hfill 2021 - 2023</span>
 
 *E-Commerce Search Engine Team*
 
@@ -29,7 +29,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 `Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Kafka, NixOS, Nginx`
 
-## Fielmann AG <span class="year">\hfill \textmd{2019 – 2020}</span>
+## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
 *Tech Lead iOS App - Tablet Based Centration*
 
@@ -42,7 +42,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 `C#, .Net, Xamarin, Jenkins, AWS, iOS, fastlane`
 
-## Fielmann AG <span class="year">\hfill \textmd{2018 – 2019}</span>
+## Fielmann AG <span class="year">\hfill 2018 – 2019</span>
 
 *Product Catalog Team*
 
@@ -54,7 +54,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 `Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI`
 
-## Oaktree Technologies GmbH <span class="year">\hfill \textmd{2012 – 2020}</span>
+## Oaktree Technologies GmbH <span class="year">\hfill 2012 – 2020</span>
 
 *Project Onboarding Tablet Based Centration & Support data-science team in architecture, automatization and workflow*
 
@@ -67,7 +67,7 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 
 `Python, NumPy, Jupiter Notebooks, Github Actions, Microsoft Azure`
 
-## Verlag Herder GmbH - Kitalino GmbH <span class="year">\hfill \textmd{2021}</span>
+## Verlag Herder GmbH - Kitalino GmbH <span class="year">\hfill 2021</span>
 
 *Consultation on Architecture, Automatization, and API Development*
 
@@ -82,7 +82,7 @@ The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solut
 
 `Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
 
-## Briends GmbH Papego - Co-Founder <span class="year">\hfill \textmd{2012 – present}</span>
+## Briends GmbH Papego - Co-Founder <span class="year">\hfill 2012 – present</span>
 
 *Co-Founder of a startup in the publishing industry*
 

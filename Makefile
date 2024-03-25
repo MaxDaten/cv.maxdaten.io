@@ -4,7 +4,7 @@ BUILD_DIR := ./build/cv
 SRC_DIR := ./src/cv
 TEMPLATE_DIR := ./src/templates
 
-PANDOC_OPTIONS := --standalone
+PANDOC_OPTIONS := --standalone --from markdown+latex_macros
 PANDOC_PDF_OPTIONS := --include-in-header $(TEMPLATE_DIR)/base.tex --template $(TEMPLATE_DIR)/new-template.tex
 PANDOC_HTML_OPTIONS := --embed-resources --write html5 --css $(TEMPLATE_DIR)/template.css --template $(TEMPLATE_DIR)/template.html --verbose
 PANDOC_DOCX_OPTIONS := --write docx

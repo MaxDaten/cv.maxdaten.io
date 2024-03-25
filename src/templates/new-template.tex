@@ -24,6 +24,8 @@
 % Formatting
 \setlist{noitemsep} % Removes item separation
 \setlist[itemize]{leftmargin=*} % Remove indention for itemized lists
+
+% Formatting section titles
 \titleformat{\section}
     {\large\bfseries}
     {\thesection}
@@ -35,13 +37,13 @@
     {\normalfont\Large\bfseries}
     {\thesubsection}
     {1em}
-    {} % before-code
+    {\vspace{0.3em}} % before-code
     [\vspace{-0.5em}] % after-code
 \titleformat{\subsubsection}
     {\normalfont\normalsize\bfseries}
     {\thesubsubsection}
     {1em}
-    {} % before-code
+    {\vspace{-0.5em}} % before-code
     [\vspace{-0.5em}] % after-code
 
 $if(graphics)$
