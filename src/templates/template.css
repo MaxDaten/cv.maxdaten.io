@@ -17,6 +17,7 @@ body {
     max-width: 20%;
     max-height: 100%;
     margin-top: 23px;
+    border-radius: 10%;
 }
 
 #github-logo {
