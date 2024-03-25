@@ -5,7 +5,7 @@ subtitle: "MSc: Computer Science"
 date: 2024-01-14
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
-  [Schedule a call](https://calendly.com/jan-philip-loos) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
+  [Schedule a call](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 
 lang: en
 ...
