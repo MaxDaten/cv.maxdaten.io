@@ -23,8 +23,25 @@
 
 % Formatting
 \setlist{noitemsep} % Removes item separation
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titleformat{\section}
+    {\large\bfseries}
+    {\thesection}
+    {1em}
+    {}
+    [\titlerule] % after-code
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+\titleformat{\subsection}
+    {\normalfont\Large\bfseries}
+    {\thesubsection}
+    {1em}
+    {} % before-code
+    [\vspace{-0.5em}] % after-code
+\titleformat{\subsubsection}
+    {\normalfont\normalsize\bfseries}
+    {\thesubsubsection}
+    {1em}
+    {} % before-code
+    [\vspace{-0.5em}] % after-code
 
 $if(graphics)$
 \usepackage{graphicx}
