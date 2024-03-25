@@ -1,0 +1,99 @@
+%-------------------------
+% CV for Northeastern University Faculty in Latex
+% Author : Zoe Kearney
+% Based off of: https://www.overleaf.com/latex/templates/coles-resume-template/qhpynjcvjpcj
+% Follows: https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
+% License : MIT
+%------------------------
+
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[T1]{fontenc} % For font encoding
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{textcomp} % provide euro and other symbols
+\usepackage{lmodern} % For font
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=1in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{parskip} % For paragraph spacing
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+$if(graphics)$
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+$endif$
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+\hypersetup{
+$if(title-meta)$
+  pdftitle={$title-meta$},
+$endif$
+$if(author-meta)$
+  pdfauthor={$author-meta$},
+$endif$
+$if(lang)$
+  pdflang={$lang$},
+$endif$
+$if(subject)$
+  pdfsubject={$subject$},
+$endif$
+$if(keywords)$
+  pdfkeywords={$for(keywords)$$keywords$$sep$, $endfor$},
+$endif$
+$if(colorlinks)$
+  colorlinks=true,
+  linkcolor={$if(linkcolor)$$linkcolor$$else$Maroon$endif$},
+  filecolor={$if(filecolor)$$filecolor$$else$Maroon$endif$},
+  citecolor={$if(citecolor)$$citecolor$$else$Blue$endif$},
+  urlcolor={$if(urlcolor)$$urlcolor$$else$Blue$endif$},
+$else$
+  hidelinks,
+$endif$
+  pdfcreator={LaTeX via pandoc}
+}
+
+
+% Header
+\begin{center}
+\textbf{\Large $title-meta$ }\\[3pt] % Name
+\textbf{$subtitle$ }\\[1pt] % Name
+\textbf{Curriculum Vitae}\\[1pt] % CV
+$contact$
+\end{center}
+
+%------------------------
+
+$body$
+
+% End document
+\end{document}
