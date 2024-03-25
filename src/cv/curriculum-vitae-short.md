@@ -49,7 +49,7 @@ C#, .Net, Xamarin, Jenkins, AWS
 
 *Project Onboarding Tablet Based Centration*
 
-Onboarding project to new enterprise environment. Support data-science team in architecture, automatization and workflow.
+Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. Onboarding project to new enterprise environment. Support data-science team in architecture, automatization and workflow.
 
 ### Technologies
 
