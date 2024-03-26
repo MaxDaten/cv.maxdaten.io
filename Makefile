@@ -15,12 +15,12 @@ build:
 pages:
 	mkdir -p $(BUILD_DIR)
 
-	@echo "Generate curriculum-vitae-short files"
-	pandoc $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) --output $(BUILD_DIR)/curriculum-vitae-short.pdf $(SRC_DIR)/curriculum-vitae-short.md
-	pandoc $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) --output $(BUILD_DIR)/curriculum-vitae-short.docx $(SRC_DIR)/curriculum-vitae-short.md
-	pandoc $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) --output $(BUILD_DIR)/curriculum-vitae-short.html $(SRC_DIR)/curriculum-vitae-short.md
+	@echo "Generate curriculum-vitae files"
+	pandoc $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) --output $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.pdf $(SRC_DIR)/curriculum-vitae.md
+	pandoc $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) --output $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.docx $(SRC_DIR)/curriculum-vitae.md
+	pandoc $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) --output $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.html $(SRC_DIR)/curriculum-vitae.md
 
-	cp -f $(BUILD_DIR)/curriculum-vitae-short.html build/index.html
+	cp -f $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.html build/index.html
 
 	cp -r .well-known build
 	cp CNAME build
