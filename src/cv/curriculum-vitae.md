@@ -124,8 +124,8 @@ Papego was an app for continuing reading printed books digitally, supported by s
 # References
 
 * [Github Profile](https://github.com/MaxDaten)
-* [Curriculum Vitae (pdf)](https://cv.maxdaten.io/cv/curriculum-vitae-short.pdf)
-* [Curriculum Vitae (docx)](https://cv.maxdaten.io/cv/curriculum-vitae-short.docx)
+* [Curriculum Vitae (pdf)](https://cv.maxdaten.io/cv/jan-philip-loos-curriculum-vitae.pdf)
+* [Curriculum Vitae (docx)](https://cv.maxdaten.io/cv/jan-philip-loos-curriculum-vitae.docx)
 * [LinkedIn Profile](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 * [Xing Profile](https://www.xing.com/profile/JanPhilip_Loos/cv)
 
