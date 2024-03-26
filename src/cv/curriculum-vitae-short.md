@@ -2,13 +2,14 @@
 title: "Jan-Philip Loos"
 author: Jan-Philip Loos
 subtitle: "MSc: Computer Science"
-date: 2024-03-25
+date: 2024-03-26
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
-  [Schedule a call](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
+  [**Schedule a call**](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 
 lang: en
 profile-picture: ./src/img/profile-portrait-comic.jpg
+colorlinks: true
 ...
 
 # Project History Highlights
@@ -19,7 +20,7 @@ profile-picture: ./src/img/profile-portrait-comic.jpg
 
 * Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
 * Frontend development of the product listings and search engine
-* Frontend development of the shop backoffice
+* Frontend & backend development of the shop backoffice
 * SRE of the shop reverse proxy
 * Maintaining and administrating Kubernetes cluster (Administration Interest Group)
 
@@ -61,7 +62,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 * Setup of processes meeting medical device regulations regarding software development processes and documentation
 * Mentoring data-science team in development workflow for reproducible notebooks and CI/CD
 
-Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is specialized in developing digital solutions for opticians. Centration app is now branded as [Qvido](https://www.linkedin.com/products/oaktt-qvido/).
+Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is specialized in developing digital solutions for opticians. Centration app is now branded as [Qvido](https://qvi.do/).
 
 ### Technologies
 
@@ -123,7 +124,14 @@ Papego was an app for continuing reading printed books digitally, supported by s
 # References
 
 * [Github Profile](https://github.com/MaxDaten)
-* [Curriculum Vitae (pdf)](./cv/curriculum-vitae-short.pdf)
-* [Curriculum Vitae (docx)](./cv/curriculum-vitae-short.docx)
+* [Curriculum Vitae (pdf)](https://cv.maxdaten.io/cv/curriculum-vitae-short.pdf)
+* [Curriculum Vitae (docx)](https://cv.maxdaten.io/cv/curriculum-vitae-short.docx)
 * [LinkedIn Profile](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 * [Xing Profile](https://www.xing.com/profile/JanPhilip_Loos/cv)
+
+# Reference Contacts
+
+* Klingel Gruppe: [Alexander Baron von Buchholz](https://www.linkedin.com/in/%F0%9F%92%BE-alexander-baron-von-buchholtz-73862b35/)
+* Fielmann AG: [Philipp Schmidtbauer](https://www.linkedin.com/in/philippschmidtbauer/)
+* Oaktree Technologies GmbH: [Melinda Koal](https://www.linkedin.com/in/melinda-koall-146b5b175/)
+* Verlag Herder/Kitalino GmbH: [Silas Töpfer](https://www.linkedin.com/in/silas-t%C3%B6pfer/)
