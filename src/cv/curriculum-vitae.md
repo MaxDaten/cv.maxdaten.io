@@ -28,7 +28,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Kafka, NixOS, Nginx`
+`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Kafka, NixOS, Nginx, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
@@ -53,7 +53,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI`
+`Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs`
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2012 – 2020</span>
 
@@ -95,7 +95,7 @@ Papego was an app for continuing reading printed books digitally, supported by s
 
 ### Technologies
 
-`Haskell, Google Cloud, Kubernetes, Docker, Nix, React, Angular, Ionic, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD`
+`Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Angular, Ionic, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS`
 
 # Awards
 
