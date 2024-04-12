@@ -45,7 +45,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ## Fielmann AG <span class="year">\hfill 2018 – 2019</span>
 
-*Senior DevOps & Full-Stack Developer in Product Catalog Team*
+*Senior DevOps & Full-stack Developer in Product Catalog Team*
 
 * Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants
 * Setup of a continuous deployment pipeline in concourse CI as a template for other teams
