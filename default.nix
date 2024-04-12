@@ -3,7 +3,7 @@ let
 
   texlive = pkgs.texlive.combine {
     inherit (pkgs.texlive)
-    scheme-basic
+    scheme-medium
     xcolor
     float
     etoolbox
@@ -11,6 +11,15 @@ let
     titlesec
     enumitem
     parskip
+
+    # Font XCharter
+    # https://tug.org/FontCatalogue/xcharter/
+    xcharter
+    # Manually derived dependencies
+    fontspec
+    euenc
+    xstring
+    fontaxes
     ;
   };
 in {
@@ -21,6 +30,7 @@ in {
     name = "cv.maxdaten.io";
     src = ./.;
     phases = [];
+
     buildInputs = [
       texlive
       pkgs.pandoc

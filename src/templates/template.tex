@@ -10,10 +10,11 @@
 \documentclass[a4paper,9pt]{extarticle}
 
 % Packages
+% \usepackage{textcomp} % provide euro and other symbols
+% \usepackage{helvet} % For font
+\usepackage{XCharter}
 \usepackage[T1]{fontenc} % For font encoding
-\usepackage[utf8]{inputenc} % For input encoding
-\usepackage{textcomp} % provide euro and other symbols
-\usepackage{lmodern} % For font
+% \usepackage[utf8]{inputenc} % For input encoding
 \usepackage{geometry} % For page margins
 \geometry{a4paper, margin=1.0cm} % Set paper size and margins
 \usepackage{titlesec} % For section title formatting
@@ -107,7 +108,7 @@ $endif$
 \begin{center}
 \textbf{\Large $title-meta$ }\\[3pt] % Name
 \textbf{$subtitle$ }\\[1pt] % Name
-\textbf{Curriculum Vitae}\\[1pt] % CV
+% \textbf{Curriculum Vitae}\\[1pt] % CV
 $contact$
 \end{center}
 

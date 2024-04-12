@@ -2,7 +2,7 @@
 title: "Jan-Philip Loos"
 author: Jan-Philip Loos
 subtitle: "MSc: Computer Science"
-date: 2024-03-26
+date: 2024-04-12
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
   [**Schedule a call**](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
@@ -19,25 +19,25 @@ colorlinks: true
 *E-Commerce Search Engine Team*
 
 * Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
-* Frontend development of the product listings and search engine
-* Frontend & backend development of the shop backoffice
-* SRE of the shop reverse proxy
+* Frontend development of the product listings and search engine in React
+* Frontend & backend development of the shop backoffice in Vue.js
+* SRE of the shop nginx reverse proxy serving over 100 million requests daily
 * Maintaining and administrating Kubernetes cluster (Administration Interest Group)
 
 Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channel mail order company in Germany with a focus on fashion and lifestyle products.
 
 ### Technologies
 
-`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Kafka, NixOS, Nginx, Terraform, Renovate`
+`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
 *Tech Lead iOS App - Tablet Based Centration*
 
-* Technical Lead Developer for an iOS enterprise app for opticians to measure optometric values of customers
-* Conception of quality assurance and testing strategy to ensure critical optometric values are measured correctly
-* Accompany team in rollout of the app to over 700 stores
-* Maintaining a Jenkins pipeline for continuous integration and deployment
+* Technical Lead Developer in a Research & Development Team of 10 for an Xamarin iOS enterprise app for opticians in 700 stores to measure optometric values of customers
+* Conception of quality assurance and testing strategy in close cooperation with opticians to ensure highly critical optometric values are measured precisely
+* Accompany team in rollout of the app to over 700 stores in DACH region
+* Maintaining a Jenkins pipeline for continuous integration and delivery
 
 ### Technologies
 
@@ -47,9 +47,9 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 *Product Catalog Team*
 
-* Greenfield backend & frontend development of a product catalog for shop assistants
-* Setup of a continuous deployment pipeline as a template for other teams
-* Mentoring in kubernetes & cloud infrastructure
+* Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants
+* Setup of a continuous deployment pipeline in concourse CI as a template for other teams
+* Mentoring in kubernetes & cloud infrastructure in AWS
 
 ### Technologies
 
@@ -59,7 +59,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 *Project Onboarding Tablet Based Centration & Support data-science team in architecture, automatization and workflow*
 
-* Setup of processes meeting medical device regulations regarding software development processes and documentation
+* Setup of processes meeting European medical device regulations (MDR) regarding software development processes and documentation
 * Mentoring data-science team in development workflow for reproducible notebooks and CI/CD
 
 Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is specialized in developing digital solutions for opticians. Centration app is now branded as [Qvido](https://qvi.do/).
@@ -74,7 +74,7 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 
 * Conceptualization of a microservice architecture for the Kitalino platform for media and data exchange
 * Support in transition to a Jenkins CI/CD pipeline (Blue Ocean)
-* Development of a new API for integration of Kitalino with leading daycare management software
+* Development of a new REST API for integration of Kitalino with leading daycare management software
 * Accompany Keycloak integration for user management
 
 The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solutions for daycare centers and their supporting organizations. As a core feature Kitalino offers digital development documentation of children.
