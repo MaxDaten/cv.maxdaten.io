@@ -6,7 +6,7 @@ date: 2024-04-12
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
   [**Schedule a call**](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
-
+reading-time: 5 min
 lang: en
 profile-picture: ./src/img/profile-portrait-comic.jpg
 colorlinks: true
