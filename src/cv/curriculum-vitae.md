@@ -18,9 +18,9 @@ colorlinks: true
 
 *Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
 
-* Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
-* React Frontend development of the product listings and search engine
-* Vue.js Frontend & Scala backend development of the shop backoffice
+* Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting close to 20 million product updates daily
+* React Frontend development of the product listings and search engine in close collaboration with the UX design team
+* Vue.js Frontend & Scala backend development of the shop backoffice enabling SEO and On-Site manager to configure campaigns, navigation, and product listings
 * SRE of the shop nginx reverse proxy serving over 100 million requests daily
 * Maintaining and administrating Kubernetes cluster (Administration Interest Group)
 
@@ -28,7 +28,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`Scala, React/Preact, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
+`Scala, React/Preact, Design System in Figma, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
