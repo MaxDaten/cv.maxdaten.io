@@ -20,7 +20,7 @@ colorlinks: true
 
 * Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
 * React Frontend development of the product listings and search engine
-* Vue.js Frontend & Scale backend development of the shop backoffice
+* Vue.js Frontend & Scala backend development of the shop backoffice
 * SRE of the shop nginx reverse proxy serving over 100 million requests daily
 * Maintaining and administrating Kubernetes cluster (Administration Interest Group)
 
