@@ -22,6 +22,10 @@ pages:
 
 	cp -f $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.html build/index.html
 
+	echo "Copy files to misc"
+	mkdir -p $(BUILD_DIR)/misc
+	cp -f $(BUILD_DIR)/jan-philip-loos-curriculum-vitae.pdf $(BUILD_DIR)/misc/cv.jan.philip.loos.en.pdf
+
 	cp -r .well-known build
 	cp CNAME build
 
