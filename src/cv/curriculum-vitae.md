@@ -16,7 +16,7 @@ colorlinks: true
 
 ## Klingel Gruppe <span class="year">\hfill 2021 - 2023</span>
 
-*E-Commerce Search Engine Team*
+*Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
 
 * Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting over 10 million products daily
 * React Frontend development of the product listings and search engine
@@ -32,7 +32,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
-*Tech Lead iOS App - Tablet Based Centration*
+*Tech Lead iOS App of a Tablet Based Centration Team*
 
 * Technical Lead Developer in a Research & Development Team of 10 for an Xamarin iOS enterprise app for opticians in 700 stores to measure optometric values of customers
 * Conception of quality assurance and testing strategy in close cooperation with opticians to ensure highly critical optometric values are measured precisely
@@ -45,7 +45,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ## Fielmann AG <span class="year">\hfill 2018 – 2019</span>
 
-*Product Catalog Team*
+*Senior DevOps & Full-Stack Developer in Product Catalog Team*
 
 * Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants
 * Setup of a continuous deployment pipeline in concourse CI as a template for other teams
@@ -57,7 +57,8 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2012 – 2020</span>
 
-*Project Onboarding Tablet Based Centration & Support data-science team in architecture, automatization and workflow*
+*Consultant for Project Onboarding Tablet Based Centration* \
+*Consultant for Data-Science Team in Architecture, Automatization and Development Workflow*
 
 * Setup of processes meeting European medical device regulations (MDR) regarding software development processes and documentation
 * Mentoring data-science team in development workflow for reproducible notebooks and CI/CD
@@ -85,7 +86,7 @@ The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solut
 
 ## Briends GmbH Papego - Co-Founder <span class="year">\hfill 2012 – present</span>
 
-*Co-Founder of a startup in the publishing industry*
+*Co-Founder of a Startup in the Publishing Industry*
 
 * Technical lead in architecture and development
 * Development of a digital reading app in iOS and Android for printed books
