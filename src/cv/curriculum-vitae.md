@@ -28,7 +28,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`Scala, React/Preact, Design System in Figma, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
+`Scala, React/Preact, Vue.js, Design System in Figma, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
