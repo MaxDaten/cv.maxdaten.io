@@ -14,6 +14,17 @@ colorlinks: true
 
 # Project History Highlights
 
+## Briends GmbH <span class="year">\hfill 11/2023 - 2024</span>
+
+* Development of a high scalable real-time [quiz web application](https://www.qwiz.buzz/) in a event-driven architecture with SvelteKit and Kotlin
+* Utilization of Websockets for real-time communication between frontend and backend
+* Development of a Kotlin backend with Vert.x for real-time communication and event sourcing
+* Enlisted for [Discord App Pitches 2024](https://discord.com/build/app-pitches-2024)
+
+### Technologies
+
+`Svelte/SvelteKit, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
+
 ## Klingel Gruppe <span class="year">\hfill 2021 - 2023</span>
 
 *Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
@@ -36,7 +47,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 * Technical Lead Developer in a Research & Development Team of 10 for an Xamarin iOS enterprise app for opticians in 700 stores to measure optometric values of customers
 * Conception of quality assurance and testing strategy in close cooperation with opticians to ensure highly critical optometric values are measured precisely
-* Accompany team in rollout of the app to over 700 stores in DACH region
+* Accompany team in a successful rollout of the app to over 700 stores in DACH region
 * Maintaining a Jenkins pipeline for continuous integration and delivery
 
 ### Technologies
