@@ -38,3 +38,9 @@ h1 {
 li {
     margin-bottom: 0.3em;
 }
+
+code {
+    // wrap long lines
+    white-space: pre-wrap;
+    text-wrap: balance;
+}
