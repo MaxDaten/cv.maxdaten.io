@@ -5,8 +5,7 @@ subtitle: "MSc: Computer Science"
 date: 2024-04-12
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
-  [**Schedule a call**](https://calendly.com/jan-philip-loos/30min) • <jan-philip@entwicklerteam.hamburg> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
-reading-time: 5 min
+  [**Schedule a 30 min call**](https://calendly.com/jan-philip-loos/30min) • <jloos@maxdaten.io> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 lang: en
 profile-picture: ./src/img/profile-portrait-comic.jpg
 colorlinks: true
@@ -14,12 +13,23 @@ colorlinks: true
 
 # Project History Highlights
 
+## Medosync Ltd <span class="year">\hfill 10/2024 - 2025</span>
+
+*Senior  DevOps & Full-stack Developer*
+
+*   Support maintenance of PHP practice management software handling appointments, billing, and insurance claims.
+*   Develop and maintain hospital software for digital billing and claims processing using Rust, Python, and Vue.js.
+
+### Technologies
+
+`Vue, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
+
 ## Briends GmbH <span class="year">\hfill 11/2023 - 2024</span>
 
-* Development of a high scalable real-time [quiz web application](https://www.qwiz.buzz/) in a event-driven architecture with SvelteKit and Kotlin
-* Utilization of Websockets for real-time communication between frontend and backend
-* Development of a Kotlin backend with Vert.x for real-time communication and event sourcing
-* Enlisted for [Discord App Pitches 2024](https://discord.com/build/app-pitches-2024)
+* Inhouse Development of a high scalable real-time quiz web application in an event-driven architecture with SvelteKit and Kotlin.
+* Utilization of Websockets for real-time communication between frontend and backend.
+* Development of a Kotlin backend with Vert.x for real-time communication and event sourcing.
+* Enlisted for [Discord App Pitches 2024](https://discord.com/build/app-pitches-2024).
 
 ### Technologies
 
@@ -29,11 +39,11 @@ colorlinks: true
 
 *Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
 
-* Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting close to 20 million product updates daily
-* React Frontend development of the product listings and search engine in close collaboration with the UX design team
-* Vue.js Frontend & Scala backend development of the shop backoffice enabling SEO and On-Site manager to configure campaigns, navigation, and product listings
-* SRE of the shop nginx reverse proxy serving over 100 million requests daily
-* Maintaining and administrating Kubernetes cluster (Administration Interest Group)
+* Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting close to 20 million product updates daily.
+* React Frontend development of the product listings and search engine in close collaboration with the UX design team.
+* Vue.js Frontend & Scala backend development of the shop backoffice enabling SEO and On-Site manager to configure campaigns, navigation, and product listings.
+* SRE of the shop nginx reverse proxy serving over 100 million requests daily.
+* Maintaining and administrating Kubernetes cluster (Administration Interest Group).
 
 Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channel mail order company in Germany with a focus on fashion and lifestyle products.
 
@@ -45,10 +55,10 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 *Tech Lead iOS App of a Tablet Based Centration Team*
 
-* Technical Lead Developer in a Research & Development Team of 10 for an Xamarin iOS enterprise app for opticians in 700 stores to measure optometric values of customers
-* Conception of quality assurance and testing strategy in close cooperation with opticians to ensure highly critical optometric values are measured precisely
-* Accompany team in a successful rollout of the app to over 700 stores in DACH region
-* Maintaining a Jenkins pipeline for continuous integration and delivery
+* Technical Lead Developer in a Research & Development Team of 10 for an Xamarin iOS enterprise app for opticians in 700 stores to measure optometric values of customers.
+* Conception of quality assurance and testing strategy in close cooperation with opticians to ensure highly critical optometric values are measured precisely.
+* Accompany team in a successful rollout of the app to over 700 stores in DACH region.
+* Maintaining a Jenkins pipeline for continuous integration and delivery.
 
 ### Technologies
 
@@ -58,9 +68,9 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 *Senior DevOps & Full-stack Developer in Product Catalog Team*
 
-* Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants
-* Setup of a continuous deployment pipeline in concourse CI as a template for other teams
-* Mentoring in kubernetes & cloud infrastructure in AWS
+* Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants.
+* Setup of a continuous deployment pipeline in concourse CI as a template for other teams.
+* Mentoring in kubernetes & cloud infrastructure in AWS.
 
 ### Technologies
 
@@ -71,8 +81,8 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 *Consultant for Project Onboarding Tablet Based Centration* \
 *Consultant for Data-Science Team in Architecture, Automatization and Development Workflow*
 
-* Setup of processes meeting European medical device regulations (MDR) regarding software development processes and documentation
-* Mentoring data-science team in development workflow for reproducible notebooks and CI/CD
+* Setup of processes meeting European medical device regulations (MDR) regarding software development processes and documentation.
+* Mentoring data-science team in development workflow for reproducible notebooks and CI/CD.
 
 Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is specialized in developing digital solutions for opticians. Centration app is now branded as [Qvido](https://qvi.do/).
 
@@ -84,10 +94,10 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 
 *Consultation on Architecture, Automatization, and API Development*
 
-* Conceptualization of a microservice architecture for the Kitalino platform for media and data exchange
-* Support in transition to a Jenkins CI/CD pipeline (Blue Ocean)
-* Development of a new REST API for integration of Kitalino with leading daycare management software
-* Accompany Keycloak integration for user management
+* Conceptualization of a microservice architecture for the Kitalino platform for media and data exchange.
+* Support in transition to a Jenkins CI/CD pipeline (Blue Ocean).
+* Development of a new REST API for integration of Kitalino with leading daycare management software.
+* Accompany Keycloak integration for user management.
 
 The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solutions for daycare centers and their supporting organizations. As a core feature Kitalino offers digital development documentation of children.
 
@@ -99,9 +109,9 @@ The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solut
 
 *Co-Founder of a Startup in the Publishing Industry*
 
-* Technical lead in architecture and development
-* Development of a digital reading app in iOS and Android for printed books
-* Architecture design and development of a backend for processing and analyzing book data
+* Technical lead in architecture and development.
+* Development of a digital reading app in iOS and Android for printed books.
+* Architecture design and development of a backend for processing and analyzing book data.
 
 Papego was an app for continuing reading printed books digitally, supported by several German publishers. The app was available for iOS and Android and was critically acclaimed by the press. The app was discontinued in 2023.
 
