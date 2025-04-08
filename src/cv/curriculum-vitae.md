@@ -141,7 +141,7 @@ Papego was an app for continuing reading printed books digitally, supported by s
 * Functional Programming and Architecture
 * Automatisation and Continuous Integration & Delivery
 * Cloud Architecture, Distributed Systems & Microservice Architecture
-* Self-Organizing Agile Teams
+* Self-Organized Agile Teams
 
 # References
 
