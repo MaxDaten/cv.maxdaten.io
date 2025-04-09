@@ -35,7 +35,7 @@ jobs:
           name: pages
           path: build
       - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4.0.0
+        uses: crazy-max/ghaction-github-pages@v4.2.0
         with:
           build_dir: build
         env:
