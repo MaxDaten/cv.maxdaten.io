@@ -76,7 +76,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 `Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
 
-## Oaktree Technologies GmbH <span class="year">\hfill 2012 – 2020</span>
+## Oaktree Technologies GmbH <span class="year">\hfill 2019 – 2020</span>
 
 *Consultant for Project Onboarding Tablet Based Centration* \
 *Consultant for Data-Science Team in Architecture, Automatization and Development Workflow*
