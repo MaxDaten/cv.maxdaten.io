@@ -37,6 +37,8 @@ in
       pkgs.pandoc
       pkgs.watchexec
       pkgs.just
+      # Image optimization (converts to WebP)
+      pkgs.imagemagick
     ];
   };
 }

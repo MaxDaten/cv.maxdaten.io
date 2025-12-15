@@ -2,6 +2,12 @@
 build_dir := "./build/cv"
 src_dir := "./src/cv"
 template_dir := "./src/templates"
+img_src_dir := "./src/img"
+img_build_dir := "./build/img"
+
+# Image optimization settings
+profile_size := "400"  # Profile picture max dimension in pixels
+profile_quality := "85"  # JPEG quality (0-100)
 
 pandoc_options := "--standalone --from markdown+latex_macros"
 pandoc_pdf_options := "--template " + template_dir + "/template.tex"
@@ -11,8 +17,8 @@ pandoc_docx_options := "--write docx"
 # Default recipe
 default: build
 
-# Build all pages
-build: pages
+# Build all pages (with image optimization)
+build: optimize-images pages
 
 # Generate curriculum-vitae files
 pages:
@@ -43,3 +49,24 @@ install:
 # Watch for changes and rebuild
 watch:
     nix-shell --pure --run 'watchexec --ignore build just pages'
+
+# Optimize images for web (converts all to WebP)
+optimize-images:
+    @echo "Optimizing images to WebP..."
+    mkdir -p {{img_build_dir}}
+    @for f in {{img_src_dir}}/*; do \
+        if [ -f "$f" ]; then \
+            name=$(basename "$f" | sed 's/\.[^.]*$//'); \
+            echo "  $f -> $name.webp"; \
+            magick "$f" -resize '{{profile_size}}x{{profile_size}}>' -strip -quality {{profile_quality}} "{{img_build_dir}}/$name.webp"; \
+        fi \
+    done
+    @echo "Image optimization complete!"
+
+# Show image sizes (before/after comparison)
+image-stats:
+    @echo "=== Source Images ({{img_src_dir}}) ==="
+    @du -h {{img_src_dir}}/* 2>/dev/null || echo "No source images found"
+    @echo ""
+    @echo "=== Optimized Images ({{img_build_dir}}) ==="
+    @du -h {{img_build_dir}}/* 2>/dev/null || echo "No optimized images found (run 'just optimize-images' first)"
