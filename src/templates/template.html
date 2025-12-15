@@ -41,6 +41,12 @@
         />
         $endfor$ $if(math)$ $math$ $endif$ $for(header-includes)$
         $header-includes$ $endfor$
+        <script
+            defer
+            src="/scitylana/js/script.js"
+            data-api="/scitylana/api/event"
+            data-domain="maxdaten.io"
+        ></script>
     </head>
     <body>
         <button id="theme-toggle" aria-label="Toggle dark mode">
