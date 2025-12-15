@@ -1,0 +1,51 @@
+name: Smoketest
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  schedule:
+    # Daily at 8:00 AM Europe/Berlin (7:00 UTC winter, 6:00 UTC summer)
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  smoketest:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    env:
+      SITE_URL: https://cv.maxdaten.io
+
+    steps:
+      - name: Check site returns 200
+        run: |
+          status=$(curl -s -o /dev/null -w "%{http_code}" "$SITE_URL")
+          if [ "$status" != "200" ]; then
+            echo "Site returned status $status"
+            exit 1
+          fi
+          echo "Site returned 200 OK"
+
+      - name: Check page contains expected content
+        run: |
+          content=$(curl -s "$SITE_URL")
+
+          # Check for name
+          if ! echo "$content" | grep -q "Jan-Philip Loos"; then
+            echo "Missing expected content: name"
+            exit 1
+          fi
+
+          # Check for CV title
+          if ! echo "$content" | grep -qi "Project History Highlights"; then
+            echo "Missing expected content: CV title"
+            exit 1
+          fi
+
+          echo "Page contains expected content"
+
+      - name: Check for dead links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress "${{ env.SITE_URL }}"
+          fail: true
