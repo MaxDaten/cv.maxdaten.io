@@ -41,12 +41,24 @@
         />
         $endfor$ $if(math)$ $math$ $endif$ $for(header-includes)$
         $header-includes$ $endfor$
+        <!-- Privacy-friendly analytics by Plausible -->
         <script
-            defer
-            src="/scitylana/js/script.js"
-            data-api="/scitylana/api/event"
-            data-domain="maxdaten.io"
+            async
+            src="https://plausible.io/js/pa-LMp9ilZvamFhsa5S7ZkVs.js"
         ></script>
+        <script>
+            ((window.plausible =
+                window.plausible ||
+                function () {
+                    (plausible.q = plausible.q || []).push(arguments);
+                }),
+                (plausible.init =
+                    plausible.init ||
+                    function (i) {
+                        plausible.o = i || {};
+                    }));
+            plausible.init();
+        </script>
     </head>
     <body>
         <button id="theme-toggle" aria-label="Toggle dark mode">
@@ -72,33 +84,38 @@
             $for(include-after)$ $include-after$ $endfor$
         </div>
         <script>
-            (function() {
-                const toggle = document.getElementById('theme-toggle');
+            (function () {
+                const toggle = document.getElementById("theme-toggle");
                 const root = document.documentElement;
 
                 function getPreferredTheme() {
-                    const stored = localStorage.getItem('theme');
+                    const stored = localStorage.getItem("theme");
                     if (stored) return stored;
-                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    return window.matchMedia("(prefers-color-scheme: dark)")
+                        .matches
+                        ? "dark"
+                        : "light";
                 }
 
                 function setTheme(theme) {
-                    root.setAttribute('data-theme', theme);
-                    localStorage.setItem('theme', theme);
+                    root.setAttribute("data-theme", theme);
+                    localStorage.setItem("theme", theme);
                 }
 
                 setTheme(getPreferredTheme());
 
-                toggle.addEventListener('click', function() {
-                    const current = root.getAttribute('data-theme');
-                    setTheme(current === 'dark' ? 'light' : 'dark');
+                toggle.addEventListener("click", function () {
+                    const current = root.getAttribute("data-theme");
+                    setTheme(current === "dark" ? "light" : "dark");
                 });
 
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-                    if (!localStorage.getItem('theme')) {
-                        setTheme(e.matches ? 'dark' : 'light');
-                    }
-                });
+                window
+                    .matchMedia("(prefers-color-scheme: dark)")
+                    .addEventListener("change", function (e) {
+                        if (!localStorage.getItem("theme")) {
+                            setTheme(e.matches ? "dark" : "light");
+                        }
+                    });
             })();
         </script>
     </body>
