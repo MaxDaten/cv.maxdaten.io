@@ -13,9 +13,9 @@ colorlinks: true
 
 # Project History Highlights
 
-## Medosync Ltd <span class="year">\hfill 10/2024 - 2025</span>
+## Medosync Ltd <span class="year">\hfill 10/2024 – 05/2025</span>
 
-*Senior  DevOps & Full-stack Developer*
+*Senior DevOps & Full-stack Developer*
 
 *   Support maintenance of PHP practice management software handling appointments, billing, and insurance claims.
 *   Develop and maintain hospital software for digital billing and claims processing using Rust, Python, and Vue.js.
@@ -24,7 +24,7 @@ colorlinks: true
 
 `Vue, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
 
-## Briends GmbH <span class="year">\hfill 11/2023 - 2024</span>
+## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
 * Inhouse Development of a high scalable real-time quiz web application in an event-driven architecture with SvelteKit and Kotlin.
 * Utilization of Websockets for real-time communication between frontend and backend.
@@ -35,7 +35,7 @@ colorlinks: true
 
 `Svelte/SvelteKit, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
 
-## Klingel Gruppe <span class="year">\hfill 2021 - 2023</span>
+## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
 *Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
 
@@ -88,9 +88,9 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 
 ### Technologies
 
-`Python, NumPy, Jupiter Notebooks, Github Actions, Microsoft Azure`
+`Python, NumPy, Jupyter Notebooks, Github Actions, Microsoft Azure`
 
-## Verlag Herder GmbH - Kitalino GmbH <span class="year">\hfill 2021</span>
+## Verlag Herder GmbH – Kitalino GmbH <span class="year">\hfill 2021</span>
 
 *Consultation on Architecture, Automatization, and API Development*
 
@@ -105,7 +105,7 @@ The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solut
 
 `Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
 
-## Briends GmbH Papego - Co-Founder <span class="year">\hfill 2012 – present</span>
+## Briends GmbH Papego – Co-Founder <span class="year">\hfill 2012 – 2023</span>
 
 *Co-Founder of a Startup in the Publishing Industry*
 
