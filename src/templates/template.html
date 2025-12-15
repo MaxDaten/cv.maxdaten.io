@@ -43,6 +43,10 @@
         $header-includes$ $endfor$
     </head>
     <body>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
         $if(title)$
         <div id="header">
             <div class="title">
@@ -61,5 +65,35 @@
             $for(include-before)$ $include-before$ $endfor$ $body$
             $for(include-after)$ $include-after$ $endfor$
         </div>
+        <script>
+            (function() {
+                const toggle = document.getElementById('theme-toggle');
+                const root = document.documentElement;
+
+                function getPreferredTheme() {
+                    const stored = localStorage.getItem('theme');
+                    if (stored) return stored;
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+
+                function setTheme(theme) {
+                    root.setAttribute('data-theme', theme);
+                    localStorage.setItem('theme', theme);
+                }
+
+                setTheme(getPreferredTheme());
+
+                toggle.addEventListener('click', function() {
+                    const current = root.getAttribute('data-theme');
+                    setTheme(current === 'dark' ? 'light' : 'dark');
+                });
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                    if (!localStorage.getItem('theme')) {
+                        setTheme(e.matches ? 'dark' : 'light');
+                    }
+                });
+            })();
+        </script>
     </body>
 </html>

@@ -9,7 +9,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
         --bg-color: #1a1a1a;
         --text-color: #e0e0e0;
         --text-muted: #a0a0a0;
@@ -17,6 +17,93 @@
         --link-visited: #b794f6;
         --code-bg: #2d2d2d;
         --code-text: #e0e0e0;
+    }
+}
+
+:root[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --link-color: #6db3f2;
+    --link-visited: #b794f6;
+    --code-bg: #2d2d2d;
+    --code-text: #e0e0e0;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--code-bg);
+    border: 1px solid var(--text-muted);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+#theme-toggle .icon-sun,
+#theme-toggle .icon-moon {
+    position: absolute;
+    transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+#theme-toggle .icon-sun {
+    filter: grayscale(1) brightness(10);
+}
+
+#theme-toggle .icon-moon {
+    filter: grayscale(1) brightness(0.3);
+}
+
+:root[data-theme="dark"] #theme-toggle .icon-moon {
+    filter: grayscale(1) brightness(2);
+}
+
+:root[data-theme="dark"] #theme-toggle .icon-sun,
+:root:not([data-theme]) #theme-toggle .icon-sun {
+    opacity: 1;
+}
+
+:root[data-theme="dark"] #theme-toggle .icon-moon,
+:root:not([data-theme]) #theme-toggle .icon-moon {
+    opacity: 0;
+}
+
+:root[data-theme="light"] #theme-toggle .icon-sun {
+    opacity: 0;
+}
+
+:root[data-theme="light"] #theme-toggle .icon-moon {
+    opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) #theme-toggle .icon-sun {
+        opacity: 1;
+    }
+    :root:not([data-theme]) #theme-toggle .icon-moon {
+        opacity: 0;
+        filter: grayscale(1) brightness(2);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]) #theme-toggle .icon-sun {
+        opacity: 0;
+    }
+    :root:not([data-theme]) #theme-toggle .icon-moon {
+        opacity: 1;
     }
 }
 
