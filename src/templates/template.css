@@ -1,8 +1,32 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --text-muted: #777777;
+    --link-color: #0066cc;
+    --link-visited: #551a8b;
+    --code-bg: #f4f4f4;
+    --code-text: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --text-muted: #a0a0a0;
+        --link-color: #6db3f2;
+        --link-visited: #b794f6;
+        --code-bg: #2d2d2d;
+        --code-text: #e0e0e0;
+    }
+}
+
 body {
     font-family: "Source Sans Pro", "Lucida Grande", Calibri, Helvetica,
         sans-serif;
     max-width: 750px;
     margin: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 #header {
@@ -28,7 +52,15 @@ body {
 .year {
     float: right;
     font-size: 0.8em;
-    color: #777;
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited);
 }
 
 h1 {
@@ -40,7 +72,10 @@ li {
 }
 
 code {
-    // wrap long lines
     white-space: pre-wrap;
     text-wrap: balance;
+    background-color: var(--code-bg);
+    color: var(--code-text);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
 }
