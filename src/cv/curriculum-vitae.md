@@ -7,7 +7,7 @@ contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
   [**Schedule a 30 min call**](https://calendar.app.google/KhVdEThcwSEBCjat5) • <jloos@maxdaten.io> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
 lang: en
-profile-picture: ./build/img/profile-current.webp
+profile-picture: ./img/profile-current.webp
 colorlinks: true
 ...
 
