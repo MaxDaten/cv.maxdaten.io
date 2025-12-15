@@ -17,7 +17,7 @@ jobs:
         with:
           name: cv-maxdaten-io
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - run: nix-shell --pure --run 'make pages'
+      - run: nix-shell --pure --run 'just pages'
       - name: Upload pages
         uses: actions/upload-artifact@v4.6.2
         with:
