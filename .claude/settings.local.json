@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__nixos__nixos_search"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "devenv"
+  ],
+  "enableAllProjectMcpServers": true
+}
