@@ -36,9 +36,9 @@ jobs:
             exit 1
           fi
 
-          # Check for CV title
-          if ! echo "$content" | grep -qi "Project History Highlights"; then
-            echo "Missing expected content: CV title"
+          # Check for CV section (handles newlines in HTML)
+          if ! echo "$content" | tr '\n' ' ' | grep -qi "Project History Highlights"; then
+            echo "Missing expected content: Project History Highlights"
             exit 1
           fi
 
