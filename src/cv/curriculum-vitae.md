@@ -122,9 +122,9 @@ Papego was an app for continuing reading printed books digitally, supported by s
 # Awards
 
 * 2018: [German Design Award (Winner: Excellent Communications Design -- Apps)](https://www.german-design-award.com/die-gewinner/galerie/detail/14562-papego.html)
-* 2016: [Isarnetz Award für Medieninnovation](https://www.briends.net/2016/11/04/papego-mit-isarnetz-award-f%C3%BCr-medieninnovation-ausgezeichnet/)
-* 2016: [CONTENTshift Award (Börsenverein des Deutschen Buchhandels)](https://www.contentshift.de/2016/gewinner/)
-* 2016: [Best of „Neuland 2.0“ at Leipziger Buchmesse](http://www.leipziger-buchmesse.de/pressemitteilungen/neuland-20-zeigt-14-ausgewaehlte-startupinnovationen/393971)
+* 2016: [Isarnetz Award für Medieninnovation 2016](https://www.boersenblatt.net/archiv/1247332.html)
+* 2016: [CONTENTshift Award (Börsenverein des Deutschen Buchhandels)](https://www.contentshift.de/en/contentshift/news/and-the-winner-ispapego/)
+* 2016: [Best of „Neuland 2.0" at Leipziger Buchmesse](https://publishingperspectives.com/2016/09/papego-app-digital-print-mobile/)
 
 # Qualifications
 
