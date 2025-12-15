@@ -6,7 +6,6 @@ result-2
 # devenv
 .devenv
 .devenv.flake.nix
-devenv.lock
 
 # direnv
 .direnv
