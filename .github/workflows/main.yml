@@ -71,7 +71,7 @@ jobs:
           fi
 
           # Check for CV title
-          if ! echo "$content" | grep -qi "curriculum vitae"; then
+          if ! echo "$content" | grep -qi "Project History Highlights"; then
             echo "Missing expected content: CV title"
             exit 1
           fi
