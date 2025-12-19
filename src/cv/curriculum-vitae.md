@@ -19,10 +19,11 @@ colorlinks: true
 
 *   Support maintenance of PHP practice management software handling appointments, billing, and insurance claims.
 *   Develop and maintain hospital software for digital billing and claims processing using Rust, Python, and Vue.js.
+*   API migration to an OpenAPI specification generated TypeScript client.
 
 ### Technologies
 
-`Vue, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
+`Vue, TypeScript, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
@@ -33,14 +34,16 @@ colorlinks: true
 
 ### Technologies
 
-`Svelte/SvelteKit, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
+`Svelte/SvelteKit, TypeScript, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
 *Senior DevOps & Full-stack Developer in E-Commerce Search Engine Team*
 
 * Development and maintenance of a highly scalable product pipeline for indexing in a Solr cluster, ingesting close to 20 million product updates daily.
-* React Frontend development of the product listings and search engine in close collaboration with the UX design team.
+* Preact Frontend development of the product listings, search engine, and product detail page.
+* Developing new features and maintaining the shop frontend, integrating the company design system.
+* Adding Jest tests for new components not covered by the design system.
 * Vue.js Frontend & Scala backend development of the shop backoffice enabling SEO and On-Site manager to configure campaigns, navigation, and product listings.
 * SRE of the shop nginx reverse proxy serving over 100 million requests daily.
 * Maintaining and administrating Kubernetes cluster (Administration Interest Group).
@@ -49,7 +52,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`Scala, React/Preact, Vue.js, Design System in Figma, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
+`JavaScript, Preact, Jest, Vue.js, Design System in Figma, Scala, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
@@ -69,12 +72,13 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 *Senior DevOps & Full-stack Developer in Product Catalog Team*
 
 * Greenfield Kotlin backend & React frontend development of a product catalog for shop assistants.
+* Support in TypeScript frontend development with React and Redux.
 * Setup of a continuous deployment pipeline in concourse CI as a template for other teams.
 * Mentoring in kubernetes & cloud infrastructure in AWS.
 
 ### Technologies
 
-`Kotlin, React, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
+`TypeScript, React, Redux, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2019 – 2020</span>
 
@@ -98,26 +102,27 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 * Support in transition to a Jenkins CI/CD pipeline (Blue Ocean).
 * Development of a new REST API for integration of Kitalino with leading daycare management software.
 * Accompany Keycloak integration for user management.
+* Training in frontend testing with Jest.
 
 The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solutions for daycare centers and their supporting organizations. As a core feature Kitalino offers digital development documentation of children.
 
 ### Technologies
 
-`Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
+`Jest, JavaScript, Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
 
 ## Briends GmbH Papego – Co-Founder <span class="year">\hfill 2012 – 2023</span>
 
 *Co-Founder of a Startup in the Publishing Industry*
 
 * Technical lead in architecture and development.
-* Development of a digital reading app in iOS and Android for printed books.
+* Greenfield development of a digital reading app in iOS and Android using Angular with TypeScript (Ionic framework).
 * Architecture design and development of a backend for processing and analyzing book data.
 
 Papego was an app for continuing reading printed books digitally, supported by several German publishers. The app was available for iOS and Android and was critically acclaimed by the press. The app was discontinued in 2023.
 
 ### Technologies
 
-`Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Angular, Ionic, Svelte, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS, Terraform`
+`TypeScript, Angular, Ionic, Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Svelte, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS, Terraform`
 
 # Awards
 
