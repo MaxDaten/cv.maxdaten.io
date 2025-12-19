@@ -11,7 +11,7 @@ profile_quality := "85"  # JPEG quality (0-100)
 
 pandoc_options := "--standalone --from markdown+latex_macros"
 pandoc_pdf_options := "--template " + template_dir + "/template.tex"
-pandoc_html_options := "--embed-resources --write html5 --css " + template_dir + "/template.css --template " + template_dir + "/template.html --verbose"
+pandoc_html_options := "--embed-resources --resource-path=build --write html5 --css " + template_dir + "/template.css --template " + template_dir + "/template.html --verbose"
 pandoc_docx_options := "--write docx"
 
 # CV variants: source_file:output_name
