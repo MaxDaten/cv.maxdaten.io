@@ -23,7 +23,7 @@ colorlinks: true
 
 ### Technologies
 
-`Vue, TypeScript, Jest, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
+`Vue, TypeScript, Jest, Cypress, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
@@ -34,7 +34,7 @@ colorlinks: true
 
 ### Technologies
 
-`Svelte/SvelteKit, TypeScript, Jest, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
+`Svelte/SvelteKit, TypeScript, Jest, Playwright, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
@@ -52,7 +52,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`JavaScript, Preact, Jest, Vue.js, Design System in Figma, Scala, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
+`JavaScript, Preact, Jest, Selenium, Vue.js, Design System in Figma, Scala, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
@@ -78,7 +78,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`TypeScript, React, Redux, Jest, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
+`TypeScript, React, Redux, Jest, Cypress, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2019 – 2020</span>
 
