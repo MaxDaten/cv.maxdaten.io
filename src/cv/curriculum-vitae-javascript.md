@@ -1,7 +1,7 @@
 ---
 title: "Jan-Philip Loos"
 author: Jan-Philip Loos
-subtitle: "JavaScript/TypeScript Experience Extract"
+subtitle: "MSc: Computer Science • JavaScript/TypeScript Experience Extract"
 date: 2024-04-12
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
