@@ -31,7 +31,7 @@ This document highlights my JavaScript and TypeScript experience. For my complet
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
-* Preact frontend development of product listings, search engine, and product detail page.
+* Preact frontend development of product listings, product search and browse, and product detail page.
 * Integration of the company design system across shop frontend.
 * Jest testing practices for new components.
 * Vue.js frontend development for shop backoffice.
