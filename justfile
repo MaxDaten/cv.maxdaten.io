@@ -29,6 +29,11 @@ pages:
     pandoc {{pandoc_options}} {{pandoc_docx_options}} --output {{build_dir}}/jan-philip-loos-curriculum-vitae.docx {{src_dir}}/curriculum-vitae.md
     pandoc {{pandoc_options}} {{pandoc_html_options}} --output {{build_dir}}/jan-philip-loos-curriculum-vitae.html {{src_dir}}/curriculum-vitae.md
 
+    @echo "Generate JavaScript/TypeScript extract"
+    pandoc {{pandoc_options}} {{pandoc_pdf_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.pdf {{src_dir}}/curriculum-vitae-javascript.md
+    pandoc {{pandoc_options}} {{pandoc_docx_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.docx {{src_dir}}/curriculum-vitae-javascript.md
+    pandoc {{pandoc_options}} {{pandoc_html_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.html {{src_dir}}/curriculum-vitae-javascript.md
+
     cp -f {{build_dir}}/jan-philip-loos-curriculum-vitae.html build/index.html
 
     @echo "Copy files to misc"
