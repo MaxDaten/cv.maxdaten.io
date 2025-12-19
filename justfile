@@ -14,25 +14,32 @@ pandoc_pdf_options := "--template " + template_dir + "/template.tex"
 pandoc_html_options := "--embed-resources --write html5 --css " + template_dir + "/template.css --template " + template_dir + "/template.html --verbose"
 pandoc_docx_options := "--write docx"
 
+# CV variants: source_file:output_name
+cv_variants := "curriculum-vitae:jan-philip-loos-curriculum-vitae curriculum-vitae-javascript:jan-philip-loos-javascript-typescript"
+
 # Default recipe
 default: build
 
 # Build all pages (with image optimization)
 build: optimize-images pages
 
-# Generate curriculum-vitae files
+# Generate a single CV in all formats (pdf, docx, html)
+[private]
+cv source output:
+    @echo "Generating {{output}}..."
+    pandoc {{pandoc_options}} {{pandoc_pdf_options}} --output {{build_dir}}/{{output}}.pdf {{src_dir}}/{{source}}.md
+    pandoc {{pandoc_options}} {{pandoc_docx_options}} --output {{build_dir}}/{{output}}.docx {{src_dir}}/{{source}}.md
+    pandoc {{pandoc_options}} {{pandoc_html_options}} --output {{build_dir}}/{{output}}.html {{src_dir}}/{{source}}.md
+
+# Generate all curriculum-vitae files
 pages:
     mkdir -p {{build_dir}}
 
-    @echo "Generate curriculum-vitae files"
-    pandoc {{pandoc_options}} {{pandoc_pdf_options}} --output {{build_dir}}/jan-philip-loos-curriculum-vitae.pdf {{src_dir}}/curriculum-vitae.md
-    pandoc {{pandoc_options}} {{pandoc_docx_options}} --output {{build_dir}}/jan-philip-loos-curriculum-vitae.docx {{src_dir}}/curriculum-vitae.md
-    pandoc {{pandoc_options}} {{pandoc_html_options}} --output {{build_dir}}/jan-philip-loos-curriculum-vitae.html {{src_dir}}/curriculum-vitae.md
-
-    @echo "Generate JavaScript/TypeScript extract"
-    pandoc {{pandoc_options}} {{pandoc_pdf_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.pdf {{src_dir}}/curriculum-vitae-javascript.md
-    pandoc {{pandoc_options}} {{pandoc_docx_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.docx {{src_dir}}/curriculum-vitae-javascript.md
-    pandoc {{pandoc_options}} {{pandoc_html_options}} --output {{build_dir}}/jan-philip-loos-javascript-typescript.html {{src_dir}}/curriculum-vitae-javascript.md
+    @for variant in {{cv_variants}}; do \
+        source=$(echo "$variant" | cut -d: -f1); \
+        output=$(echo "$variant" | cut -d: -f2); \
+        just cv "$source" "$output"; \
+    done
 
     cp -f {{build_dir}}/jan-philip-loos-curriculum-vitae.html build/index.html
 
