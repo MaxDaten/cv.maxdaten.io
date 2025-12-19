@@ -23,7 +23,7 @@ colorlinks: true
 
 ### Technologies
 
-`Vue, TypeScript, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
+`Vue, TypeScript, Jest, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
@@ -34,7 +34,7 @@ colorlinks: true
 
 ### Technologies
 
-`Svelte/SvelteKit, TypeScript, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
+`Svelte/SvelteKit, TypeScript, Jest, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
@@ -78,7 +78,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`TypeScript, React, Redux, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
+`TypeScript, React, Redux, Jest, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2019 – 2020</span>
 
@@ -122,7 +122,7 @@ Papego was an app for continuing reading printed books digitally, supported by s
 
 ### Technologies
 
-`TypeScript, Angular, Ionic, Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Svelte, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS, Terraform`
+`TypeScript, Angular, Ionic, Jest, Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Svelte, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS, Terraform`
 
 # Awards
 

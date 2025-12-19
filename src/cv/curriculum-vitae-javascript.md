@@ -20,20 +20,20 @@ This document highlights my JavaScript and TypeScript experience. For my complet
 * Develop and maintain hospital software for digital billing and claims processing using Vue.js.
 * API migration to an OpenAPI specification generated TypeScript client.
 
-`Vue.js, TypeScript, OpenAPI`
+`Vue.js, TypeScript, OpenAPI, Jest`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
 * Greenfield development of a high-scalable real-time quiz web application using SvelteKit with TypeScript.
 * Real-time WebSocket communication between frontend and backend.
 
-`SvelteKit, TypeScript, WebSockets`
+`SvelteKit, TypeScript, WebSockets, Jest`
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
 * Preact frontend development of product listings, search engine, and product detail page.
 * Integration of the company design system across shop frontend.
-* Established Jest testing practices for new components.
+* Jest testing practices for new components.
 * Vue.js frontend development for shop backoffice.
 
 `JavaScript, Preact, Jest, Vue.js`
@@ -43,7 +43,7 @@ This document highlights my JavaScript and TypeScript experience. For my complet
 * Greenfield React frontend development with TypeScript for a product catalog.
 * State management with Redux.
 
-`TypeScript, React, Redux`
+`TypeScript, React, Redux, Jest`
 
 ## Verlag Herder GmbH – Kitalino GmbH <span class="year">\hfill 2021</span>
 
@@ -55,7 +55,7 @@ This document highlights my JavaScript and TypeScript experience. For my complet
 
 * Greenfield development of a cross-platform mobile reading app using Angular with TypeScript and Ionic.
 
-`TypeScript, Angular, Ionic`
+`TypeScript, Angular, Ionic, Jest`
 
 # Full CV
 
