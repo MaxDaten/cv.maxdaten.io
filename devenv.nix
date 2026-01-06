@@ -36,6 +36,8 @@ in
     pkgs.just
     # Image optimization (converts to WebP)
     pkgs.imagemagick
+    # Design preview screenshots
+    pkgs.shot-scraper
   ];
 
   enterShell = ''
