@@ -18,9 +18,10 @@ This document highlights my JavaScript and TypeScript experience. For my complet
 ## Medosync Ltd <span class="year">\hfill 10/2024 – 05/2025</span>
 
 * Develop and maintain hospital software for digital billing and claims processing using Vue.js.
+* Maintain and extend an Express-GraphQL backend for insurance claims management, including dependency updates and delivery pipeline setup.
 * API migration to an OpenAPI specification generated TypeScript client.
 
-`Vue.js, TypeScript, OpenAPI, Jest, Cypress`
+`Vue.js, TypeScript, OpenAPI, Jest, Cypress, Node.js, Express, GraphQL`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 

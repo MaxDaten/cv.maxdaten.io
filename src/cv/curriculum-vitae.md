@@ -19,11 +19,12 @@ colorlinks: true
 
 *   Support maintenance of PHP practice management software handling appointments, billing, and insurance claims.
 *   Develop and maintain hospital software for digital billing and claims processing using Rust, Python, and Vue.js.
+*   Maintain and extend an Express-GraphQL backend for insurance claims management, including dependency updates and delivery pipeline setup.
 *   API migration to an OpenAPI specification generated TypeScript client.
 
 ### Technologies
 
-`Vue, TypeScript, Jest, Cypress, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP`
+`Vue, TypeScript, Jest, Cypress, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP, Node.js, Express, GraphQL, PostgreSQL`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
