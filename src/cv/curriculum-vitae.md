@@ -24,7 +24,7 @@ colorlinks: true
 
 ### Technologies
 
-`Vue, TypeScript, Jest, Cypress, OpenAPI, Rust, Python, GitHub Action, Azure Cloud, Kubernetes, PHP, Node.js, Express, GraphQL, PostgreSQL`
+`Vue`, `TypeScript`, `Jest`, `Cypress`, `OpenAPI`, `Rust`, `Python`, `GitHub Action`, `Azure Cloud`, `Kubernetes`, `PHP`, `Node.js`, `Express`, `GraphQL`, `PostgreSQL`
 
 ## Briends GmbH <span class="year">\hfill 11/2023 – 2024</span>
 
@@ -35,7 +35,7 @@ colorlinks: true
 
 ### Technologies
 
-`Svelte/SvelteKit, TypeScript, Jest, Playwright, Websockets, Kotlin, Vert.x, Docker, NixOS, Terraform, Google Cloud, Kubernetes`
+`Svelte/SvelteKit`, `TypeScript`, `Jest`, `Playwright`, `Websockets`, `Kotlin`, `Vert.x`, `Docker`, `NixOS`, `Terraform`, `Google Cloud`, `Kubernetes`
 
 ## Klingel Gruppe <span class="year">\hfill 2021 – 2023</span>
 
@@ -53,7 +53,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`JavaScript, Preact, Jest, Selenium, Vue.js, Design System in Figma, Scala, Solr, AWS, Gitlab CI/CD, Kubernetes, Docker, DataDog, Postgres, Apache Kafka, NixOS, Nginx, Terraform, Renovate`
+`JavaScript`, `Preact`, `Jest`, `Selenium`, `Vue.js`, `Design System in Figma`, `Scala`, `Solr`, `AWS`, `Gitlab CI/CD`, `Kubernetes`, `Docker`, `DataDog`, `Postgres`, `Apache Kafka`, `NixOS`, `Nginx`, `Terraform`, `Renovate`
 
 ## Fielmann AG <span class="year">\hfill 2019 – 2020</span>
 
@@ -66,7 +66,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`C#, .Net, Xamarin, Jenkins, AWS, iOS, fastlane`
+`C#`, `.Net`, `Xamarin`, `Jenkins`, `AWS`, `iOS`, `fastlane`
 
 ## Fielmann AG <span class="year">\hfill 2018 – 2019</span>
 
@@ -79,7 +79,7 @@ Klingel Gruppe (K - Mail Order GmbH & Co. KG) was the third biggest multi-channe
 
 ### Technologies
 
-`TypeScript, React, Redux, Jest, Cypress, Kotlin, Kubernetes, Docker, AWS, Kafka, Concourse CI, Spring Boot, Postgres, NixOs, Terraform`
+`TypeScript`, `React`, `Redux`, `Jest`, `Cypress`, `Kotlin`, `Kubernetes`, `Docker`, `AWS`, `Kafka`, `Concourse CI`, `Spring Boot`, `Postgres`, `NixOs`, `Terraform`
 
 ## Oaktree Technologies GmbH <span class="year">\hfill 2019 – 2020</span>
 
@@ -93,7 +93,7 @@ Oaktree Technologies GmbH is a subsidiary of the Fielmann AG. The company is spe
 
 ### Technologies
 
-`Python, NumPy, Jupyter Notebooks, Github Actions, Microsoft Azure`
+`Python`, `NumPy`, `Jupyter Notebooks`, `Github Actions`, `Microsoft Azure`
 
 ## Verlag Herder GmbH – Kitalino GmbH <span class="year">\hfill 2021</span>
 
@@ -109,7 +109,7 @@ The Kitalino GmbH is a subsidiary of the Herder Verlag that offers digital solut
 
 ### Technologies
 
-`Jest, JavaScript, Distributed Architectures, Keycloak, Docker & Docker Compose, MySQL, Nginx, PHP 7 & Symfony 4, Jenkins Pipeline`
+`Jest`, `JavaScript`, `Distributed Architectures`, `Keycloak`, `Docker & Docker Compose`, `MySQL`, `Nginx`, `PHP 7 & Symfony 4`, `Jenkins Pipeline`
 
 ## Briends GmbH Papego – Co-Founder <span class="year">\hfill 2012 – 2023</span>
 
@@ -123,7 +123,7 @@ Papego was an app for continuing reading printed books digitally, supported by s
 
 ### Technologies
 
-`TypeScript, Angular, Ionic, Jest, Haskell, Google Cloud, Cloud Build, Kubernetes, Docker, Nix, React, Svelte, Swift, Kotlin, Postgres, ElasticSearch, Google Cloud Build CI/CD, NixOS, Terraform`
+`TypeScript`, `Angular`, `Ionic`, `Jest`, `Haskell`, `Google Cloud`, `Cloud Build`, `Kubernetes`, `Docker`, `Nix`, `React`, `Svelte`, `Swift`, `Kotlin`, `Postgres`, `ElasticSearch`, `Google Cloud Build CI/CD`, `NixOS`, `Terraform`
 
 # Awards
 
