@@ -1,55 +1,341 @@
+/* ==========================================================================
+   CV Professional Theme - Corporate Design
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Variables - Light Mode (Default)
+   -------------------------------------------------------------------------- */
 :root {
-    --bg-color: #ffffff;
-    --text-color: #222222;
-    --text-muted: #777777;
-    --link-color: #0066cc;
-    --link-visited: #551a8b;
-    --code-bg: #f4f4f4;
-    --code-text: #333333;
+    /* Colors */
+    --bg-color: #fafbfc;
+    --bg-secondary: #f0f2f5;
+    --text-color: #1a202c;
+    --text-muted: #64748b;
+    --text-heading: #0f172a;
+    --link-color: #2563eb;
+    --link-hover: #1d4ed8;
+    --link-visited: #4f46e5;
+    --accent-color: #0ea5e9;
+    --border-color: #e2e8f0;
+    --code-bg: #f1f5f9;
+    --code-text: #334155;
+
+    /* Typography */
+    --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-8: 3rem;
+
+    /* Borders & Shadows */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* --------------------------------------------------------------------------
+   CSS Variables - Dark Mode (System Preference)
+   -------------------------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-        --bg-color: #1a1a1a;
-        --text-color: #e0e0e0;
-        --text-muted: #a0a0a0;
-        --link-color: #6db3f2;
-        --link-visited: #b794f6;
-        --code-bg: #2d2d2d;
-        --code-text: #e0e0e0;
+        --bg-color: #0f172a;
+        --bg-secondary: #1e293b;
+        --text-color: #e2e8f0;
+        --text-muted: #94a3b8;
+        --text-heading: #f8fafc;
+        --link-color: #60a5fa;
+        --link-hover: #93c5fd;
+        --link-visited: #818cf8;
+        --accent-color: #38bdf8;
+        --border-color: #334155;
+        --code-bg: #1e293b;
+        --code-text: #e2e8f0;
+
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
     }
 }
 
+/* --------------------------------------------------------------------------
+   CSS Variables - Dark Mode (Explicit Override)
+   -------------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --link-color: #6db3f2;
-    --link-visited: #b794f6;
-    --code-bg: #2d2d2d;
-    --code-text: #e0e0e0;
+    --bg-color: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-color: #e2e8f0;
+    --text-muted: #94a3b8;
+    --text-heading: #f8fafc;
+    --link-color: #60a5fa;
+    --link-hover: #93c5fd;
+    --link-visited: #818cf8;
+    --accent-color: #38bdf8;
+    --border-color: #334155;
+    --code-bg: #1e293b;
+    --code-text: #e2e8f0;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
+/* --------------------------------------------------------------------------
+   Base Styles
+   -------------------------------------------------------------------------- */
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: var(--space-4);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+#header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-6);
+    align-items: start;
+    padding-bottom: var(--space-6);
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (max-width: 600px) {
+    #header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #header .profile-picture {
+        order: -1;
+        margin: 0 auto var(--space-4);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Profile Picture
+   -------------------------------------------------------------------------- */
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-picture:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 600px) {
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 var(--space-2);
+    color: var(--text-heading);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin: var(--space-8) 0 var(--space-5);
+    padding-bottom: var(--space-3);
+    color: var(--text-heading);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), transparent);
+    border-radius: 2px;
+}
+
+/* Subtitle in header - no accent line */
+#header h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--text-muted);
+    margin: 0 0 var(--space-3);
+    padding-bottom: 0;
+}
+
+#header h2::after {
+    display: none;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: var(--space-5) 0 var(--space-3);
+    color: var(--text-heading);
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+#header a {
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Lists
+   -------------------------------------------------------------------------- */
+ul {
+    padding-left: var(--space-5);
+    margin: var(--space-3) 0;
+}
+
+li {
+    margin-bottom: var(--space-3);
+    line-height: 1.6;
+}
+
+li::marker {
+    color: var(--accent-color);
+}
+
+li ul {
+    margin-top: var(--space-2);
+}
+
+li li {
+    margin-bottom: var(--space-2);
+}
+
+/* --------------------------------------------------------------------------
+   Code & Technology Tags
+   -------------------------------------------------------------------------- */
+code {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+    text-wrap: balance;
+    background-color: var(--code-bg);
+    color: var(--code-text);
+    padding: 0.2em 0.5em;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+code:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+/* --------------------------------------------------------------------------
+   Year Badges
+   -------------------------------------------------------------------------- */
+.year {
+    float: right;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: var(--bg-secondary);
+    padding: 0.2em 0.6em;
+    border-radius: var(--radius-sm);
+    margin-left: var(--space-3);
+}
+
+/* --------------------------------------------------------------------------
+   Theme Toggle
+   -------------------------------------------------------------------------- */
 #theme-toggle {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background: var(--code-bg);
-    border: 1px solid var(--text-muted);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    width: 2.75rem;
+    height: 2.75rem;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
     z-index: 1000;
+    box-shadow: var(--shadow-sm);
 }
 
 #theme-toggle:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
 }
 
 #theme-toggle .icon-sun,
@@ -107,62 +393,18 @@
     }
 }
 
-body {
-    font-family: "Source Sans Pro", "Lucida Grande", Calibri, Helvetica,
-        sans-serif;
-    max-width: 750px;
-    margin: auto;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-picture {
-    object-fit: cover;
-    width: auto;
-    height: auto;
-    max-width: 20%;
-    max-height: 100%;
-    margin-top: 23px;
-    border-radius: 10%;
-}
-
+/* --------------------------------------------------------------------------
+   GitHub Logo
+   -------------------------------------------------------------------------- */
 #github-logo {
     padding: 0 2px;
     vertical-align: text-bottom;
 }
 
-.year {
-    float: right;
-    font-size: 0.8em;
-    color: var(--text-muted);
-}
-
-a {
-    color: var(--link-color);
-}
-
-a:visited {
-    color: var(--link-visited);
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-li {
-    margin-bottom: 0.3em;
-}
-
-code {
-    white-space: pre-wrap;
-    text-wrap: balance;
-    background-color: var(--code-bg);
-    color: var(--code-text);
-    padding: 0.1em 0.3em;
-    border-radius: 3px;
+/* --------------------------------------------------------------------------
+   Container
+   -------------------------------------------------------------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
 }
