@@ -7,8 +7,16 @@
         <meta name="generator" content="pandoc" />
         $for(author-meta)$
         <meta name="author" content="$author-meta$" />
-        $endfor$ $if(date-meta)$
+        $endfor$
+        $if(date-meta)$
         <meta name="date" content="$date-meta$" />
+        $endif$
+        <meta name="description" content="$if(subtitle)$$subtitle$ - $endif$Curriculum Vitae of $pagetitle$" />
+        <meta property="og:title" content="$pagetitle$$if(subtitle)$ - $subtitle$$endif$" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:description" content="$if(subtitle)$$subtitle$ - $endif$Curriculum Vitae" />
+        $if(profile-picture)$
+        <meta property="og:image" content="$profile-picture$" />
         $endif$
         <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
         <style type="text/css">
