@@ -18,6 +18,10 @@ jobs:
       - name: Install devenv.sh
         run: nix profile add nixpkgs#devenv
       - run: devenv shell build
+      - name: Install Playwright browsers
+        run: devenv shell -- shot-scraper install
+      - name: Generate screenshots
+        run: devenv shell -- just screenshots
       - name: Upload pages
         uses: actions/upload-artifact@v6.0.0
         with:
