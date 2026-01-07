@@ -2,6 +2,13 @@
 # Note: Dark mode colors may appear slightly brighter due to Playwright limitation.
 # Use for layout verification across viewports.
 
+# OpenGraph Preview Image (1200x630) - Social media sharing
+# Note: Uses --no-retina in workflow for exact dimensions
+- output: build/img/og-card.png
+  url: file://APP_PATH/src/templates/og-card.html
+  width: 1200
+  height: 630
+
 # Mobile (375x812) - iPhone X/11/12
 - output: build/screenshots/mobile-light.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
