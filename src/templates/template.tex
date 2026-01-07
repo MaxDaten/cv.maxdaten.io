@@ -46,12 +46,13 @@
 
 % --------------------------------------------------------------------------
 % Technology tags - Light gray boxes with subtle border
+% \strut = consistent box height, larger raisebox dims for row spacing
 % --------------------------------------------------------------------------
 \setlength{\fboxsep}{2pt}
 \setlength{\fboxrule}{0.3pt}
 \let\oldtexttt\texttt
 \renewcommand{\texttt}[1]{%
-  \fcolorbox{tagborder}{tagbg}{\oldtexttt{\small #1}}%
+  \raisebox{0pt}[1.1\baselineskip][0.4\baselineskip]{\fcolorbox{tagborder}{tagbg}{\strut\oldtexttt{\small #1}}}\hspace{0.15em}%
 }
 
 % --------------------------------------------------------------------------
@@ -62,11 +63,13 @@
 
 % --------------------------------------------------------------------------
 % Lists - Tight spacing, accent-colored bullets
+% Bullet: smaller, closer to text, vertically centered
 % --------------------------------------------------------------------------
 \setlist{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt}
 \setlist[itemize]{
-  leftmargin=1.2em,
-  label={\textcolor{accent}{\textbullet}},
+  leftmargin=1.5em,
+  labelsep=0.5em,
+  label={\textcolor{accent}{\raisebox{0.1ex}{\small\textbullet}}},
   itemsep=1pt
 }
 
