@@ -1,0 +1,3 @@
+[submodule "MaxDaten"]
+	path = MaxDaten
+	url = https://github.com/MaxDaten/MaxDaten
