@@ -1,128 +1,160 @@
 %-------------------------
-% CV for Northeastern University Faculty in Latex
-% Author : Zoe Kearney
-% Based off of: https://www.overleaf.com/latex/templates/coles-resume-template/qhpynjcvjpcj
-% Follows: https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
-% License : MIT
+% Professional CV Template
+% Design: Precision & Density - information-forward, scannable
+% Based on design principles: 4px grid, typography hierarchy, color for meaning
 %------------------------
 
 % Document class and font size
 \documentclass[a4paper,9pt]{extarticle}
 
 % Packages
-% \usepackage{textcomp} % provide euro and other symbols
-% \usepackage{helvet} % For font
-\usepackage{XCharter}
-\usepackage[T1]{fontenc} % For font encoding
-% \usepackage[utf8]{inputenc} % For input encoding
-\usepackage{geometry} % For page margins
-\geometry{a4paper, margin=1.0cm} % Set paper size and margins
-\usepackage{titlesec} % For section title formatting
-\usepackage{enumitem} % For itemized list formatting
-\usepackage{hyperref} % For hyperlinks
-\usepackage{parskip} % For paragraph spacing
-\usepackage{xcolor} % For colors
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{microtype} % Better typography
 
-% Technology tags styling - light gray background boxes
-\definecolor{tagbg}{gray}{0.92}
+% --------------------------------------------------------------------------
+% Colors - Brand accent (orange) for links and highlights
+% --------------------------------------------------------------------------
+\definecolor{accent}{HTML}{D97706}      % Brand orange for links
+\definecolor{muted}{gray}{0.45}         % Muted text (dates, secondary info)
+\definecolor{tagbg}{gray}{0.92}         % Technology tag background
+\definecolor{rule}{gray}{0.75}          % Section rule color
+
+% --------------------------------------------------------------------------
+% Page geometry - Balanced margins (not too tight)
+% --------------------------------------------------------------------------
+\geometry{
+  a4paper,
+  top=1.2cm,
+  bottom=1.2cm,
+  left=1.5cm,
+  right=1.5cm
+}
+
+% --------------------------------------------------------------------------
+% Typography - XCharter for readability
+% --------------------------------------------------------------------------
+\usepackage{XCharter}
+
+% --------------------------------------------------------------------------
+% Technology tags - Light gray background boxes
+% --------------------------------------------------------------------------
 \let\oldtexttt\texttt
 \renewcommand{\texttt}[1]{%
   \colorbox{tagbg}{\oldtexttt{\small #1}}%
 }
 
-% Formatting
-\setlist{noitemsep} % Removes item separation
-\setlist[itemize]{leftmargin=*} % Remove indention for itemized lists
+% --------------------------------------------------------------------------
+% Lists - Tight spacing, accent-colored bullets
+% --------------------------------------------------------------------------
+\setlist{noitemsep, topsep=2pt}
+\setlist[itemize]{
+  leftmargin=1.2em,
+  label={\textcolor{accent}{\textbullet}}
+}
 
-% Formatting section titles
+% --------------------------------------------------------------------------
+% Section titles (h1) - Bold with subtle underline
+% --------------------------------------------------------------------------
 \titleformat{\section}
-    {\large\bfseries}
-    {\thesection}
-    {1em}
-    {}
-    [\titlerule] % after-code
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
-\titleformat{\subsection}
-    {\normalfont\Large\bfseries}
-    {\thesubsection}
-    {1em}
-    {\vspace{0.3em}} % before-code
-    [\vspace{-0.5em}] % after-code
-\titleformat{\subsubsection}
-    {\normalfont\normalsize\bfseries}
-    {\thesubsubsection}
-    {1em}
-    {\vspace{-0.5em}} % before-code
-    [\vspace{-0.5em}] % after-code
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}{\color{rule}\hrule height 0.4pt}]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
 
+% --------------------------------------------------------------------------
+% Subsection titles (h2) - Company names, prominent
+% --------------------------------------------------------------------------
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsection}{0pt}{12pt}{2pt}
+
+% --------------------------------------------------------------------------
+% Subsubsection titles (h3) - "Technologies" label, subtle
+% --------------------------------------------------------------------------
+\titleformat{\subsubsection}
+  {\small\bfseries\color{muted}}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsubsection}{0pt}{8pt}{2pt}
+
+% --------------------------------------------------------------------------
+% Hyperlinks - Brand accent color
+% --------------------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  filecolor=accent,
+  citecolor=accent,
+  urlcolor=accent,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% --------------------------------------------------------------------------
+% Graphics (conditional)
+% --------------------------------------------------------------------------
 $if(graphics)$
 \usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
 \makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
 $endif$
 
-\setlength{\emergencystretch}{3em} % prevent overfull lines
+% --------------------------------------------------------------------------
+% Misc settings
+% --------------------------------------------------------------------------
+\setlength{\emergencystretch}{3em}
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen}
 
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-
-% Begin document
+% --------------------------------------------------------------------------
+% Begin Document
+% --------------------------------------------------------------------------
 \begin{document}
-
-% Disable page numbers
 \pagestyle{empty}
 
-\hypersetup{
+% PDF metadata
 $if(title-meta)$
-  pdftitle={$title-meta$},
+\hypersetup{pdftitle={$title-meta$}}
 $endif$
 $if(author-meta)$
-  pdfauthor={$author-meta$},
+\hypersetup{pdfauthor={$author-meta$}}
 $endif$
 $if(lang)$
-  pdflang={$lang$},
+\hypersetup{pdflang={$lang$}}
 $endif$
-$if(subject)$
-  pdfsubject={$subject$},
-$endif$
-$if(keywords)$
-  pdfkeywords={$for(keywords)$$keywords$$sep$, $endfor$},
-$endif$
-$if(colorlinks)$
-  colorlinks=true,
-  linkcolor={$if(linkcolor)$$linkcolor$$else$Maroon$endif$},
-  filecolor={$if(filecolor)$$filecolor$$else$Maroon$endif$},
-  citecolor={$if(citecolor)$$citecolor$$else$Blue$endif$},
-  urlcolor={$if(urlcolor)$$urlcolor$$else$Blue$endif$},
-$else$
-  hidelinks,
-$endif$
-  pdfcreator={LaTeX via pandoc}
-}
 
-
-% Header
+% --------------------------------------------------------------------------
+% Header - Strong name hierarchy
+% --------------------------------------------------------------------------
 \begin{center}
-\textbf{$title-meta$}\\ % Name
-\textbf{\small $subtitle$}\\ % Title
-% \textbf{Curriculum Vitae}\\[1pt] % CV
-$contact$
+{\LARGE\bfseries $title-meta$}\\[4pt]
+{\normalsize\color{muted} $subtitle$}\\[6pt]
+{\small $contact$}
 \end{center}
 
-%------------------------
+\vspace{4pt}
 
+% --------------------------------------------------------------------------
+% Body
+% --------------------------------------------------------------------------
 $body$
 
-% End document
 \end{document}
