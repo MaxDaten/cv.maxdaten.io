@@ -18,16 +18,15 @@ jobs:
       - name: Install devenv.sh
         run: nix profile add nixpkgs#devenv
       - run: devenv shell build
-      - name: Install Playwright dependencies
+      - name: Install shot-scraper and Playwright
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
-            libcups2 libdrm2 libxkbcommon0 libatspi2.0-0 libxcomposite1 \
-            libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64
-      - name: Install Playwright browsers
-        run: devenv shell -- shot-scraper install
+          pip install shot-scraper
+          shot-scraper install
+          npx playwright install-deps chromium
       - name: Generate screenshots
-        run: devenv shell -- just screenshots
+        run: |
+          sed "s|APP_PATH|$(pwd)|g" screenshots.yml > /tmp/screenshots-resolved.yml
+          shot-scraper multi /tmp/screenshots-resolved.yml --retina
       - name: Upload pages
         uses: actions/upload-artifact@v6.0.0
         with:
