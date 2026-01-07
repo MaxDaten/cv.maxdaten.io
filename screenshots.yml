@@ -1,0 +1,96 @@
+# CV Design Screenshots Configuration
+# Note: Dark mode colors may appear slightly brighter due to Playwright limitation.
+# Use for layout verification across viewports.
+
+# Mobile (375x812) - iPhone X/11/12
+- output: build/screenshots/mobile-light.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 375
+  height: 812
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+
+- output: build/screenshots/mobile-dark.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 375
+  height: 812
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+
+- output: build/screenshots/mobile-light-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 375
+  height: 812
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+    document.getElementById('awards').scrollIntoView({block: 'center'})
+
+- output: build/screenshots/mobile-dark-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 375
+  height: 812
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+    document.getElementById('awards').scrollIntoView({block: 'center'})
+
+# Tablet (768x1024) - iPad
+- output: build/screenshots/tablet-light.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 768
+  height: 1024
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+
+- output: build/screenshots/tablet-dark.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 768
+  height: 1024
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+
+- output: build/screenshots/tablet-light-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 768
+  height: 1024
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+    document.getElementById('awards').scrollIntoView({block: 'center'})
+
+- output: build/screenshots/tablet-dark-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 768
+  height: 1024
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+    document.getElementById('awards').scrollIntoView({block: 'center'})
+
+# Desktop (1440x900) - Laptop
+- output: build/screenshots/desktop-light.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 1440
+  height: 900
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+
+- output: build/screenshots/desktop-dark.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 1440
+  height: 900
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+
+- output: build/screenshots/desktop-light-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 1440
+  height: 900
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'light')
+    document.getElementById('awards').scrollIntoView({block: 'center'})
+
+- output: build/screenshots/desktop-dark-awards.png
+  url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
+  width: 1440
+  height: 900
+  javascript: |
+    document.documentElement.setAttribute('data-theme', 'dark')
+    document.getElementById('awards').scrollIntoView({block: 'center'})

@@ -84,52 +84,16 @@ image-stats:
     @du -h {{img_build_dir}}/* 2>/dev/null || echo "No optimized images found (run 'just optimize-images' first)"
 
 # Screenshot settings
-# Note: Dark mode colors may appear slightly brighter in screenshots due to
-# Playwright/Chromium color profile handling on macOS. Use for layout review.
 screenshot_dir := "./build/screenshots"
-viewports := "mobile:375:812 tablet:768:1024 desktop:1440:900"
 
 # Capture design screenshots at multiple viewports and themes
+# Note: Dark mode colors may appear slightly brighter due to Playwright limitation.
 screenshots:
     @echo "Capturing design screenshots..."
     mkdir -p {{screenshot_dir}}
-    @html_file="$(pwd)/build/cv/jan-philip-loos-curriculum-vitae.html"; \
-    for vp in {{viewports}}; do \
-        name=$(echo "$vp" | cut -d: -f1); \
-        width=$(echo "$vp" | cut -d: -f2); \
-        height=$(echo "$vp" | cut -d: -f3); \
-        echo "  Light $name (${width}x${height})"; \
-        shot-scraper "$html_file" \
-            -o "{{screenshot_dir}}/$name-light.png" \
-            --width $width --height $height \
-            --retina \
-            --javascript "document.documentElement.setAttribute('data-theme', 'light')"; \
-        echo "  Dark $name (${width}x${height})"; \
-        shot-scraper "$html_file" \
-            -o "{{screenshot_dir}}/$name-dark.png" \
-            --width $width --height $height \
-            --retina \
-            --javascript "document.documentElement.setAttribute('data-theme', 'dark')"; \
-    done
-    @echo "Capturing awards section screenshots..."
-    @html_file="$(pwd)/build/cv/jan-philip-loos-curriculum-vitae.html"; \
-    for vp in {{viewports}}; do \
-        name=$(echo "$vp" | cut -d: -f1); \
-        width=$(echo "$vp" | cut -d: -f2); \
-        height=$(echo "$vp" | cut -d: -f3); \
-        echo "  Light $name awards (${width}x${height})"; \
-        shot-scraper "$html_file" \
-            -o "{{screenshot_dir}}/$name-light-awards.png" \
-            --width $width --height $height \
-            --retina \
-            --javascript "document.documentElement.setAttribute('data-theme', 'light'); document.getElementById('awards').scrollIntoView({block: 'center'})"; \
-        echo "  Dark $name awards (${width}x${height})"; \
-        shot-scraper "$html_file" \
-            -o "{{screenshot_dir}}/$name-dark-awards.png" \
-            --width $width --height $height \
-            --retina \
-            --javascript "document.documentElement.setAttribute('data-theme', 'dark'); document.getElementById('awards').scrollIntoView({block: 'center'})"; \
-    done
+    @sed "s|APP_PATH|$(pwd)|g" screenshots.yml > /tmp/screenshots-resolved.yml
+    shot-scraper multi /tmp/screenshots-resolved.yml --retina
+    @rm /tmp/screenshots-resolved.yml
     @echo "Screenshots saved to {{screenshot_dir}}"
     @ls -la {{screenshot_dir}}
 
