@@ -3,7 +3,6 @@
 # Use for layout verification across viewports.
 
 # OpenGraph Preview Image (1200x630) - Social media sharing
-# Note: Uses --no-retina in workflow for exact dimensions
 - output: build/img/og-card.png
   url: file://APP_PATH/src/templates/og-card.html
   width: 1200

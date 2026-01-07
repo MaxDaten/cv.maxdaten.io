@@ -27,6 +27,9 @@ jobs:
         run: |
           sed "s|APP_PATH|$(pwd)|g" screenshots.yml > /tmp/screenshots-resolved.yml
           shot-scraper multi /tmp/screenshots-resolved.yml --retina
+      - name: Generate OG preview image (exact 1200x630)
+        run: |
+          shot-scraper shot src/templates/og-card.html -w 1200 -h 630 -o build/img/og-card.png
       - name: Upload pages
         uses: actions/upload-artifact@v6.0.0
         with:
