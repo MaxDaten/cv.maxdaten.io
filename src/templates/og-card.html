@@ -7,7 +7,7 @@
     <style>
         /*
          * OG Card Design
-         * Direction: Precision & Density
+         * Direction: Boldness & Clarity (optimized for thumbnail readability)
          * Grid: 4px base (all values multiples of 4)
          * Depth: Borders-only
          * Border radius: Sharp system (4, 6, 8)
@@ -55,16 +55,15 @@
 
         .og-content {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 56px;
             width: 100%;
-            max-width: 1000px;
         }
 
-        /* Photo - 224px on 4px grid */
+        /* Photo - stretch to match text block height */
         .og-photo {
             width: 224px;
-            height: 224px;
+            align-self: stretch;
             border-radius: 8px;
             object-fit: cover;
             border: 1px solid var(--border);
@@ -94,51 +93,36 @@
             height: 4px;
             background: var(--accent);
             margin-top: 16px;
-            border-radius: 2px;
+            border-radius: 4px;
         }
 
-        /* Role - 28px on grid */
+        /* Role - larger for thumbnail readability */
         .og-role {
             font-family: var(--font-sans);
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 500;
             letter-spacing: -0.01em;
             color: var(--text-secondary);
-            margin-top: 20px;
+            margin-top: 24px;
         }
 
-        /* Tagline - 24px on grid */
-        .og-tagline {
+        /* CTA - button style, right aligned */
+        .og-cta {
+            align-self: flex-end;
+            margin-top: 32px;
+            padding: 16px 32px;
+            background: var(--accent);
+            color: white;
             font-family: var(--font-sans);
             font-size: 24px;
-            font-weight: 400;
-            color: var(--text-muted);
-            margin-top: 12px;
+            font-weight: 600;
+            border-radius: 8px;
         }
 
-        /* Skills - 16px on grid */
-        .og-skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 28px;
-        }
-
-        .og-skill {
-            font-family: var(--font-mono);
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-secondary);
-            background: var(--bg-primary);
-            padding: 8px 16px;
-            border-radius: 6px;
-            border: 1px solid var(--border);
-        }
-
-        /* Domain - 24px on grid */
+        /* Domain - 24px on grid, symmetrical with card padding */
         .og-domain {
             position: absolute;
-            bottom: 40px;
+            bottom: 56px;
             right: 56px;
             font-family: var(--font-sans);
             font-size: 24px;
@@ -154,13 +138,7 @@
             <div class="og-text">
                 <h1 class="og-name">Jan-Philip Loos</h1>
                 <p class="og-role">DevOps · Cloud · Functional Architecture</p>
-                <p class="og-tagline">functional & automated</p>
-                <div class="og-skills">
-                    <span class="og-skill">Cloud Native</span>
-                    <span class="og-skill">Infrastructure as Code</span>
-                    <span class="og-skill">Automation</span>
-                    <span class="og-skill">CI/CD</span>
-                </div>
+                <span class="og-cta">Book a 30min Call</span>
             </div>
         </div>
         <div class="og-domain">cv.maxdaten.io</div>
