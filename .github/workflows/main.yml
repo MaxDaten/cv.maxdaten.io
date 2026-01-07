@@ -17,19 +17,16 @@ jobs:
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Install devenv.sh
         run: nix profile add nixpkgs#devenv
-      - run: devenv shell build
-      - name: Install shot-scraper and Playwright
-        run: |
-          pip install shot-scraper
-          shot-scraper install
-          npx playwright install-deps chromium
+
+      - name: Install Playwright browsers
+        run: devenv shell shot-scraper install
+
+      - name: Build CV (optimize images, generate OG, pages)
+        run: devenv shell just build
+
       - name: Generate screenshots
-        run: |
-          sed "s|APP_PATH|$(pwd)|g" screenshots.yml > /tmp/screenshots-resolved.yml
-          shot-scraper multi /tmp/screenshots-resolved.yml --retina
-      - name: Generate OG preview image (exact 1200x630)
-        run: |
-          shot-scraper shot src/templates/og-card.html -w 1200 -h 630 -o build/img/og-card.png
+        run: devenv shell just screenshots
+
       - name: Upload pages
         uses: actions/upload-artifact@v6.0.0
         with:
