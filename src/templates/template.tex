@@ -18,12 +18,15 @@
 \usepackage{microtype} % Better typography
 
 % --------------------------------------------------------------------------
-% Colors - Brand accent (orange) for links and highlights
+% Colors - 4-level contrast hierarchy
 % --------------------------------------------------------------------------
-\definecolor{accent}{HTML}{D97706}      % Brand orange for links
-\definecolor{muted}{gray}{0.45}         % Muted text (dates, secondary info)
-\definecolor{tagbg}{gray}{0.92}         % Technology tag background
-\definecolor{rule}{gray}{0.75}          % Section rule color
+\definecolor{accent}{HTML}{D97706}      % Brand orange for links/highlights
+\definecolor{secondary}{gray}{0.35}     % Secondary text (roles, descriptions)
+\definecolor{muted}{gray}{0.50}         % Muted text (dates, labels)
+\definecolor{faint}{gray}{0.65}         % Faint text (subtle info)
+\definecolor{tagbg}{gray}{0.93}         % Technology tag background
+\definecolor{tagborder}{gray}{0.85}     % Technology tag border
+\definecolor{rule}{gray}{0.80}          % Section rule color
 
 % --------------------------------------------------------------------------
 % Page geometry - Balanced margins (not too tight)
@@ -42,20 +45,29 @@
 \usepackage{XCharter}
 
 % --------------------------------------------------------------------------
-% Technology tags - Light gray background boxes
+% Technology tags - Light gray boxes with subtle border
 % --------------------------------------------------------------------------
+\setlength{\fboxsep}{2pt}
+\setlength{\fboxrule}{0.3pt}
 \let\oldtexttt\texttt
 \renewcommand{\texttt}[1]{%
-  \colorbox{tagbg}{\oldtexttt{\small #1}}%
+  \fcolorbox{tagborder}{tagbg}{\oldtexttt{\small #1}}%
 }
+
+% --------------------------------------------------------------------------
+% Emphasized text (role titles) - Secondary color, not italic
+% --------------------------------------------------------------------------
+\let\oldemph\emph
+\renewcommand{\emph}[1]{{\color{secondary}#1}}
 
 % --------------------------------------------------------------------------
 % Lists - Tight spacing, accent-colored bullets
 % --------------------------------------------------------------------------
-\setlist{noitemsep, topsep=2pt}
+\setlist{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt}
 \setlist[itemize]{
   leftmargin=1.2em,
-  label={\textcolor{accent}{\textbullet}}
+  label={\textcolor{accent}{\textbullet}},
+  itemsep=1pt
 }
 
 % --------------------------------------------------------------------------
@@ -83,11 +95,11 @@
 % Subsubsection titles (h3) - "Technologies" label, subtle
 % --------------------------------------------------------------------------
 \titleformat{\subsubsection}
-  {\small\bfseries\color{muted}}
+  {\small\color{muted}}
   {}
   {0pt}
   {}
-\titlespacing*{\subsubsection}{0pt}{8pt}{2pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{2pt}
 
 % --------------------------------------------------------------------------
 % Hyperlinks - Brand accent color
@@ -142,15 +154,16 @@ $if(lang)$
 $endif$
 
 % --------------------------------------------------------------------------
-% Header - Strong name hierarchy
+% Header - Strong name hierarchy with accent underline
 % --------------------------------------------------------------------------
 \begin{center}
-{\LARGE\bfseries $title-meta$}\\[4pt]
-{\normalsize\color{muted} $subtitle$}\\[6pt]
+{\LARGE\bfseries $title-meta$}\\[2pt]
+{\color{accent}\rule{40pt}{2pt}}\\[6pt]
+{\normalsize\color{muted} $subtitle$}\\[4pt]
 {\small $contact$}
 \end{center}
 
-\vspace{4pt}
+\vspace{2pt}
 
 % --------------------------------------------------------------------------
 % Body
