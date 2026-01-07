@@ -4,7 +4,7 @@
 
 # OpenGraph Preview Image (1200x630) - Social media sharing
 - output: build/img/og-card.png
-  url: file://APP_PATH/src/templates/og-card.html
+  url: APP_PATH/src/templates/og-card.html
   width: 1200
   height: 630
 
@@ -14,30 +14,30 @@
   width: 375
   height: 812
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
+      document.documentElement.setAttribute('data-theme', 'light')
 
 - output: build/screenshots/mobile-dark.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 375
   height: 812
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
+      document.documentElement.setAttribute('data-theme', 'dark')
 
 - output: build/screenshots/mobile-light-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 375
   height: 812
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'light')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
 
 - output: build/screenshots/mobile-dark-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 375
   height: 812
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'dark')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
 
 # Tablet (768x1024) - iPad
 - output: build/screenshots/tablet-light.png
@@ -45,30 +45,30 @@
   width: 768
   height: 1024
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
+      document.documentElement.setAttribute('data-theme', 'light')
 
 - output: build/screenshots/tablet-dark.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 768
   height: 1024
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
+      document.documentElement.setAttribute('data-theme', 'dark')
 
 - output: build/screenshots/tablet-light-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 768
   height: 1024
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'light')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
 
 - output: build/screenshots/tablet-dark-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 768
   height: 1024
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'dark')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
 
 # Desktop (1440x900) - Laptop
 - output: build/screenshots/desktop-light.png
@@ -76,27 +76,27 @@
   width: 1440
   height: 900
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
+      document.documentElement.setAttribute('data-theme', 'light')
 
 - output: build/screenshots/desktop-dark.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 1440
   height: 900
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
+      document.documentElement.setAttribute('data-theme', 'dark')
 
 - output: build/screenshots/desktop-light-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 1440
   height: 900
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'light')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'light')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
 
 - output: build/screenshots/desktop-dark-awards.png
   url: APP_PATH/build/cv/jan-philip-loos-curriculum-vitae.html
   width: 1440
   height: 900
   javascript: |
-    document.documentElement.setAttribute('data-theme', 'dark')
-    document.getElementById('awards').scrollIntoView({block: 'center'})
+      document.documentElement.setAttribute('data-theme', 'dark')
+      document.getElementById('awards').scrollIntoView({block: 'center'})
