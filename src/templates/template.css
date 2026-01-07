@@ -98,7 +98,7 @@ body {
     line-height: 1.6;
     max-width: 850px;
     margin: 0 auto;
-    padding: var(--space-6) var(--space-5);
+    padding: var(--space-5);
     background-color: var(--bg-color);
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
@@ -150,7 +150,7 @@ body {
     height: 120px;
     object-fit: cover;
     border-radius: var(--radius-md);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
 }
 
@@ -317,7 +317,7 @@ code {
     white-space: nowrap;
     background-color: var(--code-bg);
     color: var(--code-text);
-    padding: 2px 6px;
+    padding: 4px 8px;
     border-radius: var(--radius-sm);
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -343,7 +343,7 @@ code {
     font-variant-numeric: tabular-nums;
     color: var(--text-muted);
     background: var(--bg-secondary);
-    padding: 3px 8px;
+    padding: 4px 8px;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
     margin-left: var(--space-3);
@@ -354,8 +354,8 @@ code {
    -------------------------------------------------------------------------- */
 #theme-toggle {
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: var(--space-5);
+    right: var(--space-5);
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
