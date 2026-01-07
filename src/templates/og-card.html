@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200, height=630">
+    <title>OG Card - Jan-Philip Loos</title>
+    <style>
+        /* Force light mode variables for consistent OG image */
+        :root {
+            --bg-color: #fafbfc;
+            --bg-secondary: #f0f2f5;
+            --text-color: #1a202c;
+            --text-muted: #64748b;
+            --text-heading: #0f172a;
+            --accent-color: #ff8000;
+            --border-color: #e2e8f0;
+            --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+            font-family: var(--font-body);
+            background: var(--bg-color);
+        }
+
+        .og-card {
+            width: 1200px;
+            height: 630px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-secondary) 100%);
+            padding: 80px;
+            position: relative;
+        }
+
+        .og-content {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+        }
+
+        .og-photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+            flex-shrink: 0;
+        }
+
+        .og-text {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .og-text h1 {
+            font-family: var(--font-heading);
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: var(--text-heading);
+        }
+
+        .og-text h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent-color);
+            margin-top: 20px;
+            border-radius: 2px;
+        }
+
+        .og-text h2 {
+            font-family: var(--font-body);
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        .og-domain {
+            position: absolute;
+            bottom: 48px;
+            right: 64px;
+            font-family: var(--font-body);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--accent-color);
+            letter-spacing: 0.01em;
+        }
+
+        /* Subtle corner accent */
+        .og-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="og-card">
+        <div class="og-content">
+            <img class="og-photo" src="../img/profile-current.png" alt="Jan-Philip Loos">
+            <div class="og-text">
+                <h1>Jan-Philip Loos</h1>
+                <h2>MSc: Computer Science</h2>
+            </div>
+        </div>
+        <div class="og-domain">cv.maxdaten.io</div>
+    </div>
+</body>
+</html>
