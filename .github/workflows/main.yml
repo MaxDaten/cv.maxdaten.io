@@ -22,13 +22,18 @@ jobs:
         run: npx playwright install-deps chromium
 
       - name: Install Playwright browsers
-        run: devenv shell shot-scraper install
+        run: npx playwright install chromium
 
-      - name: Build CV (optimize images, generate OG, pages)
-        run: devenv shell just build
+      - name: Build CV core (optimize images, pages)
+        run: devenv shell just build-core
+
+      - name: Generate OG image
+        run: npx shot-scraper shot src/templates/og-card.html -w 1200 -h 630 -o build/img/og-card.png
 
       - name: Generate screenshots
-        run: devenv shell just screenshots
+        run: |
+          sed "s|APP_PATH|$(pwd)|g" screenshots.yml > /tmp/screenshots-resolved.yml
+          npx shot-scraper multi /tmp/screenshots-resolved.yml --retina
 
       - name: Upload pages
         uses: actions/upload-artifact@v6.0.0

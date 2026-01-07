@@ -23,6 +23,9 @@ default: build
 # Build all pages (with image optimization and OG images)
 build: optimize-images og-images pages
 
+# Build core assets only (no Playwright/shot-scraper - for CI compatibility)
+build-core: optimize-images pages
+
 # Generate a single CV in all formats (pdf, docx, html)
 [private]
 cv source output:
