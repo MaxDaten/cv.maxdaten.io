@@ -312,12 +312,14 @@ li li {
    Code & Technology Tags
    -------------------------------------------------------------------------- */
 code {
+    display: inline-block;
     font-family: var(--font-mono);
     font-size: 0.8125rem;
     white-space: nowrap;
     background-color: var(--code-bg);
     color: var(--code-text);
-    padding: 4px 8px;
+    padding: 4px 6px;
+    margin: 0 4px 8px 0;
     border-radius: var(--radius-sm);
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
