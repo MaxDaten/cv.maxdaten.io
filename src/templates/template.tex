@@ -21,6 +21,14 @@
 \usepackage{enumitem} % For itemized list formatting
 \usepackage{hyperref} % For hyperlinks
 \usepackage{parskip} % For paragraph spacing
+\usepackage{xcolor} % For colors
+
+% Technology tags styling - light gray background boxes
+\definecolor{tagbg}{gray}{0.92}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{%
+  \colorbox{tagbg}{\oldtexttt{\small #1}}%
+}
 
 % Formatting
 \setlist{noitemsep} % Removes item separation

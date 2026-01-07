@@ -273,18 +273,24 @@ li li {
    -------------------------------------------------------------------------- */
 code {
     font-family: var(--font-mono);
-    font-size: 0.875rem;
-    white-space: pre-wrap;
-    text-wrap: balance;
+    font-size: 0.8125rem;
+    white-space: nowrap;
     background-color: var(--code-bg);
     color: var(--code-text);
-    padding: 0.2em 0.5em;
+    padding: 2px 6px;
     border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* No hover effect - clean & functional for technical recruiters */
+:root[data-theme="dark"] code {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) code {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}
 
 /* --------------------------------------------------------------------------
    Year Badges
