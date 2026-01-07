@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=1200, height=630">
     <title>OG Card - Jan-Philip Loos</title>
     <style>
-        /* Force light mode variables for consistent OG image */
+        /*
+         * OG Card Design
+         * Direction: Precision & Density
+         * Grid: 4px base (all values multiples of 4)
+         * Depth: Borders-only
+         * Border radius: Sharp system (4, 6, 8)
+         * Padding: Symmetrical
+         */
         :root {
-            --bg-color: #fafbfc;
-            --bg-secondary: #f0f2f5;
-            --text-color: #1a202c;
-            --text-muted: #64748b;
-            --text-heading: #0f172a;
-            --accent-color: #ff8000;
-            --border-color: #e2e8f0;
-            --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --bg-primary: #fafbfc;
+            --bg-secondary: #f4f5f7;
+            --text-foreground: #0f172a;
+            --text-secondary: rgba(15, 23, 42, 0.72);
+            --text-muted: rgba(15, 23, 42, 0.56);
+            --accent: #d97706;
+            --border: rgba(0, 0, 0, 0.08);
+
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-mono: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
         }
 
         * {
@@ -28,8 +36,9 @@
             width: 1200px;
             height: 630px;
             overflow: hidden;
-            font-family: var(--font-body);
-            background: var(--bg-color);
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            -webkit-font-smoothing: antialiased;
         }
 
         .og-card {
@@ -38,80 +47,103 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-secondary) 100%);
-            padding: 80px;
+            background: linear-gradient(145deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            /* Symmetrical padding */
+            padding: 56px;
             position: relative;
         }
 
         .og-content {
             display: flex;
             align-items: center;
-            gap: 64px;
+            gap: 56px;
+            width: 100%;
+            max-width: 1000px;
         }
 
+        /* Photo - 224px on 4px grid */
         .og-photo {
-            width: 220px;
-            height: 220px;
-            border-radius: 16px;
+            width: 224px;
+            height: 224px;
+            border-radius: 8px;
             object-fit: cover;
-            border: 4px solid var(--accent-color);
-            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+            border: 1px solid var(--border);
             flex-shrink: 0;
         }
 
         .og-text {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            flex: 1;
         }
 
-        .og-text h1 {
-            font-family: var(--font-heading);
+        /* Name - 72px on grid */
+        .og-name {
+            font-family: var(--font-sans);
             font-size: 72px;
             font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            color: var(--text-heading);
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            color: var(--text-foreground);
         }
 
-        .og-text h1::after {
+        .og-name::after {
             content: '';
             display: block;
-            width: 80px;
+            width: 56px;
             height: 4px;
-            background: var(--accent-color);
-            margin-top: 20px;
+            background: var(--accent);
+            margin-top: 16px;
             border-radius: 2px;
         }
 
-        .og-text h2 {
-            font-family: var(--font-body);
-            font-size: 32px;
+        /* Role - 28px on grid */
+        .og-role {
+            font-family: var(--font-sans);
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: var(--text-secondary);
+            margin-top: 20px;
+        }
+
+        /* Tagline - 24px on grid */
+        .og-tagline {
+            font-family: var(--font-sans);
+            font-size: 24px;
             font-weight: 400;
             color: var(--text-muted);
-            margin-top: 8px;
+            margin-top: 12px;
         }
 
+        /* Skills - 16px on grid */
+        .og-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .og-skill {
+            font-family: var(--font-mono);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            background: var(--bg-primary);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        /* Domain - 24px on grid */
         .og-domain {
             position: absolute;
-            bottom: 48px;
-            right: 64px;
-            font-family: var(--font-body);
+            bottom: 40px;
+            right: 56px;
+            font-family: var(--font-sans);
             font-size: 24px;
             font-weight: 600;
-            color: var(--accent-color);
-            letter-spacing: 0.01em;
-        }
-
-        /* Subtle corner accent */
-        .og-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 8px;
-            height: 100%;
-            background: var(--accent-color);
+            color: var(--accent);
         }
     </style>
 </head>
@@ -120,8 +152,15 @@
         <div class="og-content">
             <img class="og-photo" src="../img/profile-current.png" alt="Jan-Philip Loos">
             <div class="og-text">
-                <h1>Jan-Philip Loos</h1>
-                <h2>MSc: Computer Science</h2>
+                <h1 class="og-name">Jan-Philip Loos</h1>
+                <p class="og-role">DevOps · Cloud · Functional Architecture</p>
+                <p class="og-tagline">functional & automated</p>
+                <div class="og-skills">
+                    <span class="og-skill">Cloud Native</span>
+                    <span class="og-skill">Infrastructure as Code</span>
+                    <span class="og-skill">Automation</span>
+                    <span class="og-skill">CI/CD</span>
+                </div>
             </div>
         </div>
         <div class="og-domain">cv.maxdaten.io</div>
