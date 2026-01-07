@@ -100,12 +100,33 @@ screenshots:
         shot-scraper "$html_file" \
             -o "{{screenshot_dir}}/$name-light.png" \
             --width $width --height $height \
+            --retina \
             --javascript "document.documentElement.setAttribute('data-theme', 'light')"; \
         echo "  Dark $name (${width}x${height})"; \
         shot-scraper "$html_file" \
             -o "{{screenshot_dir}}/$name-dark.png" \
             --width $width --height $height \
+            --retina \
             --javascript "document.documentElement.setAttribute('data-theme', 'dark')"; \
+    done
+    @echo "Capturing awards section screenshots..."
+    @html_file="$(pwd)/build/cv/jan-philip-loos-curriculum-vitae.html"; \
+    for vp in {{viewports}}; do \
+        name=$(echo "$vp" | cut -d: -f1); \
+        width=$(echo "$vp" | cut -d: -f2); \
+        height=$(echo "$vp" | cut -d: -f3); \
+        echo "  Light $name awards (${width}x${height})"; \
+        shot-scraper "$html_file" \
+            -o "{{screenshot_dir}}/$name-light-awards.png" \
+            --width $width --height $height \
+            --retina \
+            --javascript "document.documentElement.setAttribute('data-theme', 'light'); document.getElementById('awards').scrollIntoView({block: 'center'})"; \
+        echo "  Dark $name awards (${width}x${height})"; \
+        shot-scraper "$html_file" \
+            -o "{{screenshot_dir}}/$name-dark-awards.png" \
+            --width $width --height $height \
+            --retina \
+            --javascript "document.documentElement.setAttribute('data-theme', 'dark'); document.getElementById('awards').scrollIntoView({block: 'center'})"; \
     done
     @echo "Screenshots saved to {{screenshot_dir}}"
     @ls -la {{screenshot_dir}}
