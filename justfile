@@ -84,6 +84,8 @@ image-stats:
     @du -h {{img_build_dir}}/* 2>/dev/null || echo "No optimized images found (run 'just optimize-images' first)"
 
 # Screenshot settings
+# Note: Dark mode colors may appear slightly brighter in screenshots due to
+# Playwright/Chromium color profile handling on macOS. Use for layout review.
 screenshot_dir := "./build/screenshots"
 viewports := "mobile:375:812 tablet:768:1024 desktop:1440:900"
 
