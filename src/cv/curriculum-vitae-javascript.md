@@ -2,7 +2,7 @@
 title: "Jan-Philip Loos"
 author: Jan-Philip Loos
 subtitle: "MSc: Computer Science • JavaScript/TypeScript Experience Extract"
-date: 2025-01-07
+date: 2026-01-07
 contact: |
   Oktaviostraße 112 E, 22043 Hamburg, Germany\
   [**Schedule a 30 min call**](https://calendar.app.google/KhVdEThcwSEBCjat5) • <jloos@maxdaten.io> • [GitHub](https://github.com/MaxDaten) • [LinkedIn](https://www.linkedin.com/in/jan-philip-loos-770b23201/)
