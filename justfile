@@ -20,8 +20,8 @@ cv_variants := "curriculum-vitae:jan-philip-loos-curriculum-vitae curriculum-vit
 # Default recipe
 default: build
 
-# Build all pages (with image optimization)
-build: optimize-images pages
+# Build all pages (with image optimization and OG images)
+build: optimize-images og-images pages
 
 # Generate a single CV in all formats (pdf, docx, html)
 [private]
@@ -74,6 +74,14 @@ optimize-images:
         fi \
     done
     @echo "Image optimization complete!"
+
+# Generate OpenGraph preview image for social sharing
+og-images:
+    @echo "Generating OpenGraph preview image..."
+    mkdir -p {{img_build_dir}}
+    shot-scraper shot {{template_dir}}/og-card.html -w 1200 -h 630 -o {{img_build_dir}}/og-card.png
+    @echo "OG image generated at {{img_build_dir}}/og-card.png"
+    @ls -lh {{img_build_dir}}/og-card.png
 
 # Show image sizes (before/after comparison)
 image-stats:
