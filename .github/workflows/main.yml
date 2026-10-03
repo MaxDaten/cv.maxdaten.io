@@ -11,12 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: cachix/install-nix-action@v31
-      - uses: cachix/cachix-action@v16
+      - uses: cachix/cachix-action@v17
         with:
           name: cv-maxdaten-io
+          extraPullNames: devenv
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Install devenv.sh
-        run: nix profile add nixpkgs#devenv
+        run: nix profile add github:cachix/devenv/v2.4.0
 
       - name: Install Playwright system dependencies
         run: npx playwright install-deps chromium
@@ -54,7 +55,7 @@ jobs:
           name: pages
           path: build
       - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4.2.0
+        uses: crazy-max/ghaction-github-pages@v5.0.0
         with:
           build_dir: build
         env:
