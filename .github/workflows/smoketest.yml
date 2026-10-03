@@ -31,13 +31,13 @@ jobs:
           content=$(curl -s "$SITE_URL")
 
           # Check for name
-          if ! echo "$content" | grep -q "Jan-Philip Loos"; then
+          if ! grep -q "Jan-Philip Loos" <<<"$content"; then
             echo "Missing expected content: name"
             exit 1
           fi
 
           # Check for CV section (handles newlines in HTML)
-          if ! echo "$content" | tr '\n' ' ' | grep -qi "Project History Highlights"; then
+          if ! grep -qi "Project History Highlights" <<<"${content//$'\n'/ }"; then
             echo "Missing expected content: Project History Highlights"
             exit 1
           fi
