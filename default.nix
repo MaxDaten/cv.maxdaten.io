@@ -1,27 +1,24 @@
 let
   pkgs = import <nixpkgs> { };
 
-  texlive = pkgs.texlive.combine {
-    inherit (pkgs.texlive)
-      scheme-medium
-      xcolor
-      float
-      etoolbox
-      extsizes
-      titlesec
-      enumitem
-      parskip
+  texlive = pkgs.texliveMedium.withPackages (ps: with ps; [
+    xcolor
+    float
+    etoolbox
+    extsizes
+    titlesec
+    enumitem
+    parskip
 
-      # Font XCharter
-      # https://tug.org/FontCatalogue/xcharter/
-      xcharter
-      # Manually derived dependencies
-      fontspec
-      euenc
-      xstring
-      fontaxes
-      ;
-  };
+    # Font XCharter
+    # https://tug.org/FontCatalogue/xcharter/
+    xcharter
+    # Manually derived dependencies
+    fontspec
+    euenc
+    xstring
+    fontaxes
+  ]);
 in
 {
   inherit pkgs;
